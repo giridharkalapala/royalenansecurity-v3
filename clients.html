@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Valued Clients | Royal Enan Security Services</title>
+  <meta name="description"
+    content="Discover the premier enterprises, corporate hubs, healthcare networks, and luxury residential communities that trust Royal Enan Security Services for reliable protection.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Google Fonts: Rajdhani, Poppins, Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Rajdhani:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6.5.2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- AOS (Animate on Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="clients-page">
+
+  <!-- ==========================================================================
+       1. Header: Fixed Brand Logo & Sticky Hamburger Navigation Menu
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container-custom">
+
+      <!-- Brand Logo Emblem -->
+      <a href="index.html" class="cred-header-brand" aria-label="Royal Enan Security Services Homepage">
+        <img src="assets/images/logo.png" alt="Royal Enan Security Emblem" class="cred-brand-emblem" width="80"
+          height="80">
+      </a>
+
+      <!-- Header Actions & Elevated Hamburger Box -->
+      <div class="cred-header-actions">
+        <button type="button" class="cred-hamburger-box" id="menu-toggle-btn" aria-label="Toggle navigation menu"
+          aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="hamburger-label d-none d-sm-inline">MENU</span>
+          <span class="cred-hamburger-bars" aria-hidden="true">
+            <span class="c-bar"></span>
+            <span class="c-bar"></span>
+            <span class="c-bar"></span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Fullscreen Navigation Drawer -->
+  <div class="cred-drawer-overlay" id="mobile-nav-drawer" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-label="Navigation Menu">
+    <div class="cred-drawer-container">
+
+      <!-- Drawer Top Bar -->
+      <div class="cred-drawer-top">
+        <a href="index.html" class="cred-drawer-brand" aria-label="Royal Enan Security Home">
+          <img src="assets/images/logo.png" alt="Royal Enan Emblem" class="cred-drawer-logo" width="80" height="80">
+        </a>
+        <button type="button" class="cred-drawer-close" id="drawer-close-btn" aria-label="Close navigation menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Navigation Links -->
+      <div class="cred-drawer-grid">
+        <div class="cred-drawer-nav-col">
+          <ul class="cred-drawer-nav-list">
+            <li><a href="index.html" class="cred-nav-item drawer-link"><span class="nav-lbl">Home</span></a></li>
+            <li><a href="about.html" class="cred-nav-item drawer-link"><span class="nav-lbl">About Us</span></a></li>
+            <li class="cred-drawer-services-item" id="drawer-services-item">
+              <a href="services.html" class="cred-nav-item drawer-link" id="drawer-services-link">
+                <span class="nav-lbl">Services</span>
+                <i class="fa-solid fa-chevron-right drawer-nav-arrow" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li><a href="clients.html" class="cred-nav-item drawer-link active"><span class="nav-lbl">Clients</span></a></li>
+            <li><a href="contact.html" class="cred-nav-item drawer-link"><span class="nav-lbl">Contact Us</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Right Side: All Services Flyout Panel -->
+        <div class="cred-drawer-services-panel" id="drawer-services-panel" aria-label="Our Specialized Services">
+          
+          <ul class="drawer-services-subgrid">
+            <li>
+              <a href="industrial-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-industry"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Industrial Services</span>
+                  
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="corporate-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-building"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Corporate Services</span>
+                 
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mall-retail-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Mall &amp; Retail Services</span>
+                 
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="hotel-residential-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-hotel"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Hotel &amp; Residential</span>
+                 
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="hospital-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-square-plus"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Hospital Services</span>
+                  
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="building-protection-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Building Protection</span>
+                  
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="housekeeping-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-broom"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Housekeeping Services</span>
+                 
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         2. HERO SECTION: Full-Width Corporate Clients Header
+         ========================================================================== -->
+    <section class="services-hero-section clients-hero-section" id="clients-hero">
+
+      <!-- Background Image Layer with Dusk Corporate Lighting -->
+      <div class="services-hero-bg-container" aria-hidden="true">
+        <img src="assets/images/hero-building.jpg" alt="Corporate Headquarters Protected by Royal Enan"
+          class="services-hero-bg-img">
+        <div class="services-hero-overlay"></div>
+      </div>
+
+      <div class="container-custom services-hero-content">
+        <div class="row align-items-center">
+
+          <!-- Left Column: Breadcrumb, Heading, Cyan Tagline & Description -->
+          <div class="col-lg-7 col-md-12 services-hero-left" data-aos="fade-right" data-aos-duration="800">
+
+            <!-- Breadcrumb Navigation -->
+            <nav class="services-breadcrumb" aria-label="Breadcrumb">
+              <a href="index.html" class="breadcrumb-home-link">
+                <i class="fa-solid fa-house"></i> Home
+              </a>
+              <span class="breadcrumb-sep">/</span>
+              <span class="breadcrumb-current">Our Clients</span>
+            </nav>
+
+            <!-- Main Heading with Gold Word Highlight -->
+            <h1 class="services-hero-title">
+              Securing India's<br>
+              <span class="text-gold-highlight">Leading Enterprises</span>
+            </h1>
+
+            <!-- Supporting Tagline in Italic Cyan -->
+            <p class="services-hero-tagline">
+              <em>Long-term trust built on discipline, vigilance &amp; operational excellence</em>
+            </p>
+
+            <!-- Supporting Description Paragraph -->
+            <p class="services-hero-desc">
+              We proudly protect premier corporations, IT campuses, healthcare institutions, manufacturing plants,
+              and luxury gated communities across South India with zero-compromise vigilance.
+            </p>
+          </div>
+
+          <!-- Right Column: 3 Compact Trust Indicators -->
+          <div class="col-lg-5 col-md-12 services-hero-right" data-aos="fade-left" data-aos-duration="850">
+            <div class="services-trust-panel">
+
+              <!-- Trust Item 1 -->
+              <div class="services-trust-item">
+                <div class="services-trust-badge">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="services-trust-text">
+                  <span class="trust-title">100+ Enterprise</span>
+                  <span class="trust-subtitle">Active Deployments</span>
+                </div>
+              </div>
+
+              <!-- Trust Item 2 -->
+              <div class="services-trust-item">
+                <div class="services-trust-badge">
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="services-trust-text">
+                  <span class="trust-title">99.4% Client</span>
+                  <span class="trust-subtitle">Annual Retention</span>
+                </div>
+              </div>
+
+              <!-- Trust Item 3 -->
+              <div class="services-trust-item">
+                <div class="services-trust-badge">
+                  <span class="badge-247-icon">ISO</span>
+                </div>
+                <div class="services-trust-text">
+                  <span class="trust-title">ISO 9001:2015</span>
+                  <span class="trust-subtitle">Registered Security</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. IMPACT METRIC BAR: Full-Width Gold Stat Strip
+         ========================================================================== -->
+    <section class="emergency-contact-bar clients-metric-bar" aria-label="Key Partnership Statistics">
+      <div class="container-custom">
+        <div class="clients-stats-grid">
+
+          <div class="client-stat-item">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">Enterprise Partners</span>
+          </div>
+
+          <div class="client-stat-divider d-none d-md-block"></div>
+
+          <div class="client-stat-item">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Years of Protection</span>
+          </div>
+
+          <div class="client-stat-divider d-none d-md-block"></div>
+
+          <div class="client-stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Police-Verified Guards</span>
+          </div>
+
+          <div class="client-stat-divider d-none d-md-block"></div>
+
+          <div class="client-stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Active Command Dispatch</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. CLIENTS INTRODUCTION & FILTERABLE LOGO GALLERY
+         ========================================================================== -->
+    <section class="services-intro-section pb-4" id="clients-gallery">
+      <div class="container-custom">
+        <div class="services-intro-content text-center mb-5" data-aos="fade-up">
+
+          <!-- Cyan Eyebrow with Decorative Lines -->
+          <div class="services-eyebrow-container">
+            <span class="eyebrow-decor-line"></span>
+            <span class="services-eyebrow-label">OUR PARTNERSHIPS</span>
+            <span class="eyebrow-decor-line"></span>
+          </div>
+
+          <!-- Main Heading with Gold Word Highlight -->
+          <h2 class="services-intro-heading">
+            Trusted by Leaders in <span class="text-gold-highlight">Every Sector</span>
+          </h2>
+
+          <!-- Descriptive Subtitle Paragraph -->
+          <p class="services-intro-desc">
+            From premier real estate developments to multinational financial institutions and critical healthcare
+            facilities, our security force provides the foundation of stability and safety.
+          </p>
+
+          <!-- Sector Filter Pills -->
+          <div class="client-filter-row mt-4">
+            <button type="button" class="client-filter-btn is-active" data-filter="all">All Partners</button>
+            <button type="button" class="client-filter-btn" data-filter="residential">Real Estate &amp; Gated</button>
+            <button type="button" class="client-filter-btn" data-filter="healthcare">Healthcare &amp; Hospitals</button>
+            <button type="button" class="client-filter-btn" data-filter="corporate">Corporate &amp; Retail</button>
+          </div>
+
+        </div>
+
+        <!-- 10 Real Client Brand Cards Grid -->
+        <div class="row g-4 client-brands-grid">
+
+          <!-- Client 1: SOBHA Windsor Whitefield -->
+          <div class="col-lg-3 col-md-4 col-6 client-item" data-category="residential" data-aos="fade-up"
+            data-aos-delay="50">
+            <div class="client-brand-card">
+              <div class="client-brand-logo-wrap">
+                <img src="assets/images/clients/clients-logo-3.png" alt="SOBHA Windsor Whitefield"
+                  class="client-brand-img" loading="lazy">
+              </div>
+              <div class="client-brand-info">
+                <span class="client-brand-sector">Luxury Real Estate</span>
+                <h4 class="client-brand-name">SOBHA Windsor</h4>
+                <span class="client-brand-badge"><i class="fa-solid fa-circle-check text-gold me-1"></i>Active
+                  Deployment</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Client 2: Sapphire -->
+          <div class="col-lg-3 col-md-4 col-6 client-item" data-category="corporate" data-aos="fade-up"
+            data-aos-delay="100">
+            <div class="client-brand-card">
+              <div class="client-brand-logo-wrap">
+                <img src="assets/images/clients/clients-logo-5.png" alt="Sapphire Enterprise" class="client-brand-img"
+                  loading="lazy">
+              </div>
+              <div class="client-brand-info">
+                <span class="client-brand-sector">Commercial Services</span>
+                <h4 class="client-brand-name">Sapphire Group</h4>
+                <span class="client-brand-badge"><i class="fa-solid fa-circle-check text-gold me-1"></i>Facility
+                  Security</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Client 3: Angel One -->
+          <div class="col-lg-3 col-md-4 col-6 client-item" data-category="corporate" data-aos="fade-up"
+            data-aos-delay="150">
+            <div class="client-brand-card">
+              <div class="client-brand-logo-wrap">
+                <img src="assets/images/clients/clients-logo-4.png" alt="Angel One Financial" class="client-brand-img"
+                  loading="lazy">
+              </div>
+              <div class="client-brand-info">
+                <span class="client-brand-sector">Financial Services</span>
+                <h4 class="client-brand-name">Angel One</h4>
+                <span class="client-brand-badge"><i class="fa-solid fa-circle-check text-gold me-1"></i>Corporate
+                  Protection</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Client 4: Asha Hospital -->
+          <div class="col-lg-3 col-md-4 col-6 client-item" data-category="healthcare" data-aos="fade-up"
+            data-aos-delay="200">
+            <div class="client-brand-card">
+              <div class="client-brand-logo-wrap">
+                <img src="assets/images/clients/clients-logo-7.png" alt="Asha Hospital" class="client-brand-img"
+                  loading="lazy">
+              </div>
+              <div class="client-brand-info">
+                <span class="client-brand-sector">Healthcare Institution</span>
+                <h4 class="client-brand-name">Asha Hospital</h4>
+                <span class="client-brand-badge"><i class="fa-solid fa-circle-check text-gold me-1"></i>24/7 Guard
+                  Force</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Client 5: Belief Hospitals -->
+          <div class="col-lg-3 col-md-4 col-6 client-item" data-category="healthcare" data-aos="fade-up"
+            data-aos-delay="250">
+            <div class="client-brand-card">
+              <div class="client-brand-logo-wrap">
+                <img src="assets/images/clients/clients-logo-11.png" alt="Belief Hospitals" class="client-brand-img"
+                  loading="lazy">
+              </div>
+              <div class="client-brand-info">
+                <span class="client-brand-sector">Healthcare Network</span>
+                <h4 class="client-brand-name">Belief Hospitals</h4>
+                <span class="client-brand-badge"><i class="fa-solid fa-circle-check text-gold me-1"></i>Access
+                  Control</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Client 6: Hyundai -->
+          <div class="col-lg-3 col-md-4 col-6 client-item" data-category="corporate" data-aos="fade-up"
+            data-aos-delay="300">
+            <div class="client-brand-card">
+              <div class="client-brand-logo-wrap">
+                <img src="assets/images/clients/clients-logo-9.png" alt="Hyundai Distribution" class="client-brand-img"
+                  loading="lazy">
+              </div>
+              <div class="client-brand-info">
+                <span class="client-brand-sector">Automotive &amp; Industrial</span>
+                <h4 class="client-brand-name">Hyundai</h4>
+                <span class="client-brand-badge"><i class="fa-solid fa-circle-check text-gold me-1"></i>Perimeter
+                  Security</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Client 7: Advanced Hair Studio -->
+          <div class="col-lg-3 col-md-4 col-6 client-item" data-category="corporate" data-aos="fade-up"
+            data-aos-delay="350">
+            <div class="client-brand-card">
+              <div class="client-brand-logo-wrap">
+                <img src="assets/images/clients/clients-logo-2.png" alt="Advanced Hair Studio" class="client-brand-img"
+                  loading="lazy">
+              </div>
+              <div class="client-brand-info">
+                <span class="client-brand-sector">Premium Retail &amp; Clinic</span>
+                <h4 class="client-brand-name">Advanced Hair Studio</h4>
+                <span class="client-brand-badge"><i class="fa-solid fa-circle-check text-gold me-1"></i>Retail
+                  Guarding</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Client 8: Signova -->
+          <div class="col-lg-3 col-md-4 col-6 client-item" data-category="corporate" data-aos="fade-up"
+            data-aos-delay="400">
+            <div class="client-brand-card">
+              <div class="client-brand-logo-wrap">
+                <img src="assets/images/clients/clients-logo-1.png" alt="Signova" class="client-brand-img"
+                  loading="lazy">
+              </div>
+              <div class="client-brand-info">
+                <span class="client-brand-sector">Corporate Enterprises</span>
+                <h4 class="client-brand-name">Signova</h4>
+                <span class="client-brand-badge"><i class="fa-solid fa-circle-check text-gold me-1"></i>Building
+                  Security</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Client 9: Padmaraga Restaurant -->
+          <div class="col-lg-3 col-md-4 col-6 client-item" data-category="corporate" data-aos="fade-up"
+            data-aos-delay="450">
+            <div class="client-brand-card">
+              <div class="client-brand-logo-wrap">
+                <img src="assets/images/clients/clients-logo-8.png" alt="Padmaraga Restaurant" class="client-brand-img"
+                  loading="lazy">
+              </div>
+              <div class="client-brand-info">
+                <span class="client-brand-sector">Hospitality &amp; Dining</span>
+                <h4 class="client-brand-name">Padmaraga</h4>
+                <span class="client-brand-badge"><i class="fa-solid fa-circle-check text-gold me-1"></i>Crowd
+                  Management</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Client 10: Nayan Hardware -->
+          <div class="col-lg-3 col-md-4 col-6 client-item" data-category="corporate" data-aos="fade-up"
+            data-aos-delay="500">
+            <div class="client-brand-card">
+              <div class="client-brand-logo-wrap">
+                <img src="assets/images/clients/clients-logo-10.png" alt="Nayan Hardware" class="client-brand-img"
+                  loading="lazy">
+              </div>
+              <div class="client-brand-info">
+                <span class="client-brand-sector">Commercial Wholesale</span>
+                <h4 class="client-brand-name">Nayan Hardware</h4>
+                <span class="client-brand-badge"><i class="fa-solid fa-circle-check text-gold me-1"></i>Warehouse
+                  Security</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. CASE HIGHLIGHTS: Real-World Security Deployments
+         ========================================================================== -->
+    <section class="services-grid-section pt-4" id="case-studies">
+      <div class="container-custom">
+
+        <div class="section-title-wrap text-center mb-5" data-aos="fade-up">
+          <div class="services-eyebrow-container">
+            <span class="eyebrow-decor-line"></span>
+            <span class="services-eyebrow-label">PROVEN IMPACT</span>
+            <span class="eyebrow-decor-line"></span>
+          </div>
+          <h2 class="services-intro-heading">
+            Deployment <span class="text-gold-highlight">Case Highlights</span>
+          </h2>
+          <p class="services-intro-desc">
+            Explore how Royal Enan creates tailor-made security architectures for complex corporate, medical, and
+            residential environments.
+          </p>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Case 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="case-highlight-card">
+              <div class="case-card-img-wrap">
+                <img src="assets/images/service-hotel.jpg" alt="Residential Community Security" class="case-card-img"
+                  loading="lazy">
+                <span class="case-tag-pill">Gated Residential</span>
+              </div>
+              <div class="case-card-content">
+                <h3 class="case-title">SOBHA &amp; Prestige Luxury Enclaves</h3>
+                <p class="case-desc">
+                  Deployed multi-tier gate management, automated vehicle RFID tracking, and 24/7 perimeter foot
+                  patrols across 12-acre residential properties.
+                </p>
+                <ul class="case-points-list">
+                  <li><i class="fa-solid fa-circle-check text-gold me-2"></i>100% visitor digital logging</li>
+                  <li><i class="fa-solid fa-circle-check text-gold me-2"></i>Zero unauthorized perimeter intrusions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="case-highlight-card">
+              <div class="case-card-img-wrap">
+                <img src="assets/images/service-hospital.jpg" alt="Hospital & Clinic Security" class="case-card-img"
+                  loading="lazy">
+                <span class="case-tag-pill">Healthcare &amp; Emergency</span>
+              </div>
+              <div class="case-card-content">
+                <h3 class="case-title">Asha &amp; Belief Healthcare Systems</h3>
+                <p class="case-desc">
+                  Provided specialized healthcare security officers trained in patient de-escalation, casualty triage
+                  corridor management, and ICU access control.
+                </p>
+                <ul class="case-points-list">
+                  <li><i class="fa-solid fa-circle-check text-gold me-2"></i>De-escalation trained officers</li>
+                  <li><i class="fa-solid fa-circle-check text-gold me-2"></i>Rapid incident escalation protocol</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="case-highlight-card">
+              <div class="case-card-img-wrap">
+                <img src="assets/images/service-building-protection.jpg" alt="Commercial Building Protection"
+                  class="case-card-img" loading="lazy">
+                <span class="case-tag-pill">Corporate Tech Park</span>
+              </div>
+              <div class="case-card-content">
+                <h3 class="case-title">Corporate Headquarters &amp; Industrial Hubs</h3>
+                <p class="case-desc">
+                  Integrated high-definition CCTV command monitoring with physical guard rotas for automated turnstile
+                  access and perimeter night surveillance.
+                </p>
+                <ul class="case-points-list">
+                  <li><i class="fa-solid fa-circle-check text-gold me-2"></i>Integrated CCTV command surveillance</li>
+                  <li><i class="fa-solid fa-circle-check text-gold me-2"></i>Strict statutory police verification</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. TESTIMONIALS SLIDER SECTION
+         ========================================================================== -->
+    <section class="clients-testimonials-section py-5" id="testimonials">
+      <div class="container-custom">
+
+        <div class="section-title-wrap text-center mb-5" data-aos="fade-up">
+          <div class="services-eyebrow-container">
+            <span class="eyebrow-decor-line"></span>
+            <span class="services-eyebrow-label">CLIENT VOICES</span>
+            <span class="eyebrow-decor-line"></span>
+          </div>
+          <h2 class="services-intro-heading text-white">
+            What Our <span class="text-gold-highlight">Partners Say</span>
+          </h2>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+          <!-- Testimonial 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="client-testimonial-card">
+              <div class="testi-stars mb-3">
+                <i class="fa-solid fa-star text-gold"></i>
+                <i class="fa-solid fa-star text-gold"></i>
+                <i class="fa-solid fa-star text-gold"></i>
+                <i class="fa-solid fa-star text-gold"></i>
+                <i class="fa-solid fa-star text-gold"></i>
+              </div>
+              <p class="testi-text">
+                &ldquo;Royal Enan Security has maintained impeccable standards across our commercial facilities. Their
+                guards are punctual, courteous, and highly disciplined.&rdquo;
+              </p>
+              <div class="testi-user-meta mt-4">
+                <div class="testi-avatar-circle">RK</div>
+                <div>
+                  <h4 class="testi-user-name">Ramesh Kumar</h4>
+                  <p class="testi-user-role">Facility Manager, Commercial Hub</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="client-testimonial-card">
+              <div class="testi-stars mb-3">
+                <i class="fa-solid fa-star text-gold"></i>
+                <i class="fa-solid fa-star text-gold"></i>
+                <i class="fa-solid fa-star text-gold"></i>
+                <i class="fa-solid fa-star text-gold"></i>
+                <i class="fa-solid fa-star text-gold"></i>
+              </div>
+              <p class="testi-text">
+                &ldquo;Managing hospital patient movement requires sensitivity and quick response. Royal Enan
+                guards handle emergency situations with professional composure.&rdquo;
+              </p>
+              <div class="testi-user-meta mt-4">
+                <div class="testi-avatar-circle">DR</div>
+                <div>
+                  <h4 class="testi-user-name">Dr. Rajesh Varma</h4>
+                  <p class="testi-user-role">Operations Administrator, Healthcare</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="client-testimonial-card">
+              <div class="testi-stars mb-3">
+                <i class="fa-solid fa-star text-gold"></i>
+                <i class="fa-solid fa-star text-gold"></i>
+                <i class="fa-solid fa-star text-gold"></i>
+                <i class="fa-solid fa-star text-gold"></i>
+                <i class="fa-solid fa-star text-gold"></i>
+              </div>
+              <p class="testi-text">
+                &ldquo;From visitor vehicle verification to night surveillance, our gated community residents feel
+                completely secure under Royal Enan's vigilant care.&rdquo;
+              </p>
+              <div class="testi-user-meta mt-4">
+                <div class="testi-avatar-circle">VM</div>
+                <div>
+                  <h4 class="testi-user-name">Vikram Malhotra</h4>
+                  <p class="testi-user-role">RWA President, Luxury Enclave</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. FINAL CALL-TO-ACTION SECTION
+         ========================================================================== -->
+    <section class="services-cta-section" id="clients-cta">
+
+      <!-- Background Architecture Layer with Dark Night Overlay -->
+      <div class="services-cta-bg-container" aria-hidden="true">
+        <img src="assets/images/hero-building.jpg" alt="Modern Corporate Headquarters Architecture at Night"
+          class="services-cta-bg-img" loading="lazy">
+        <div class="services-cta-overlay"></div>
+      </div>
+
+      <div class="container-custom services-cta-content">
+        <div class="row align-items-center justify-content-between g-5">
+
+          <!-- Left Column -->
+          <div class="col-lg-7" data-aos="fade-right">
+            <div class="services-cta-eyebrow-wrap">
+              <span class="cta-eyebrow-text">BECOME A PROTECTED PARTNER</span>
+              <span class="cta-eyebrow-line"></span>
+            </div>
+
+            <h2 class="services-cta-heading">
+              Ready to Upgrade Security for<br>
+              <span class="text-gold-highlight">Your Enterprise?</span>
+            </h2>
+
+            <p class="services-cta-desc">
+              Contact our national command team today for a complimentary on-site risk audit and bespoke guard force
+              deployment plan tailored to your premises.
+            </p>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-lg-5" data-aos="fade-left">
+            <div class="services-cta-right-box">
+              <a href="contact.html" class="btn-cta-gold-large" aria-label="Request a Security Audit Consultation">
+                <span>Partner With Us</span>
+                <i class="fa-solid fa-arrow-right ms-2"></i>
+              </a>
+
+              <div class="services-cta-indicators-row">
+                <div class="cta-indicator-item">
+                  <div class="cta-indicator-icon"><i class="fa-solid fa-bolt"></i></div>
+                  <span class="cta-indicator-label">15-Min Response</span>
+                </div>
+                <div class="cta-indicator-item">
+                  <div class="cta-indicator-icon"><i class="fa-solid fa-file-shield"></i></div>
+                  <span class="cta-indicator-label">Free Security Audit</span>
+                </div>
+                <div class="cta-indicator-item">
+                  <div class="cta-indicator-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                  <span class="cta-indicator-label">ISO Certified</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       8. SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="row g-5 footer-grid-row">
+
+        <!-- Column 1: Company Info & Social Channels -->
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="footer-brand" aria-label="Royal Enan Security Home">
+            <img src="assets/images/logo.png" alt="Royal Enan Security Logo" class="footer-logo-img" width="52"
+              height="52">
+          </a>
+          <p class="footer-bio">
+            Royal Enan Security Services offers reliable security solutions for industries, corporate offices,
+            residential communities, and more.
+          </p>
+          <div class="footer-social-row" aria-label="Social media channels">
+            <a href="https://facebook.com" class="social-circle-btn" aria-label="Facebook" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://linkedin.com" class="social-circle-btn" aria-label="LinkedIn" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://instagram.com" class="social-circle-btn" aria-label="Instagram" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" class="social-circle-btn" aria-label="YouTube" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link"><span class="caret-gold">›</span> Home</a></li>
+            <li><a href="about.html" class="footer-link"><span class="caret-gold">›</span> About Us</a></li>
+            <li><a href="services.html" class="footer-link"><span class="caret-gold">›</span> Services</a></li>
+            <li><a href="clients.html" class="footer-link active"><span class="caret-gold">›</span> Clients</a></li>
+            <li><a href="contact.html" class="footer-link"><span class="caret-gold">›</span> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Our Services -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h3 class="footer-col-title">Our Services</h3>
+          <ul class="footer-links-list">
+            <li><a href="industrial-services.html" class="footer-link"><span class="caret-gold">›</span>
+                Industrial Security</a></li>
+            <li><a href="corporate-services.html" class="footer-link"><span class="caret-gold">›</span>
+                Corporate Security</a></li>
+            <li><a href="mall-retail-services.html" class="footer-link"><span class="caret-gold">›</span> Mall &amp;
+                Retail Security</a></li>
+            <li><a href="hotel-residential-services.html" class="footer-link"><span class="caret-gold">›</span> Hotel
+                &amp;
+                Residential Security</a></li>
+            <li><a href="hospital-services.html" class="footer-link"><span class="caret-gold">›</span> Hospital
+                Security</a></li>
+            <li><a href="building-protection-services.html" class="footer-link"><span class="caret-gold">›</span>
+                Building
+                Protection</a></li>
+            <li><a href="housekeeping-services.html" class="footer-link"><span class="caret-gold">›</span>
+                Housekeeping Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Us -->
+        <div class="col-lg-3 col-md-6" id="contact">
+          <h3 class="footer-col-title">Contact Us</h3>
+          <ul class="footer-contact-list">
+            <li class="contact-item">
+              <div class="contact-icon-gold"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-text">
+                <a href="tel:8096947362" class="contact-link">8096947362</a>
+                <a href="tel:+919100547892" class="contact-link">+91 91005 47892</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="contact-icon-gold"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-text">
+                <a href="mailto:info@royalenansecurity.com" class="contact-link">info@royalenansecurity.com</a>
+                <a href="mailto:hyderabad@royalenansecurity.com"
+                  class="contact-link">hyderabad@royalenansecurity.com</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="contact-icon-gold"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-text">
+                <span>D No: 1-8-85/46 govt college, vidyanagar, Hyderabad 500044</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Legal Bar with Divider -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">&copy; 2026 <b style="font-weight: 800; color: #ffffff;">Royal Enan Security
+            Services</b>.All Rights Reserved. designed & developed by <a href="https://sunseaz.com" target="_blank"><b
+              style="font-weight: 800; color: #ffffff;">SunSeaz</b></a></p>
+        <button type="button" class="back-to-top-circle" id="back-to-top-btn" aria-label="Back to Top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts: Bootstrap 5.3.3 Bundle, AOS, Main JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Interactive Client Sector Filter Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.client-filter-btn');
+      const clientItems = document.querySelectorAll('.client-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+
+          const filter = btn.getAttribute('data-filter');
+
+          clientItems.forEach(item => {
+            if (filter === 'all' || item.getAttribute('data-category') === filter) {
+              item.style.display = '';
+              setTimeout(() => {
+                item.style.opacity = '1';
+                item.style.transform = 'translateY(0)';
+              }, 50);
+            } else {
+              item.style.opacity = '0';
+              item.style.transform = 'translateY(15px)';
+              setTimeout(() => {
+                item.style.display = 'none';
+              }, 250);
+            }
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>

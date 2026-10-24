@@ -102,6 +102,69 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Drawer Flyout Services Panel on Hover / Touch
+  const drawerServicesItem = document.getElementById('drawer-services-item');
+  const drawerServicesLink = document.getElementById('drawer-services-link');
+  const drawerServicesPanel = document.getElementById('drawer-services-panel');
+  let panelHideTimer = null;
+
+  if (drawerServicesItem && drawerServicesPanel) {
+    const showPanel = () => {
+      clearTimeout(panelHideTimer);
+      drawerServicesPanel.classList.add('is-active');
+      drawerServicesItem.classList.add('is-hovered');
+    };
+
+    const hidePanel = () => {
+      panelHideTimer = setTimeout(() => {
+        drawerServicesPanel.classList.remove('is-active');
+        drawerServicesItem.classList.remove('is-hovered');
+      }, 220);
+    };
+
+    drawerServicesItem.addEventListener('mouseenter', showPanel);
+    drawerServicesItem.addEventListener('mouseleave', hidePanel);
+    drawerServicesPanel.addEventListener('mouseenter', showPanel);
+    drawerServicesPanel.addEventListener('mouseleave', hidePanel);
+
+    // Mobile / Touch click toggle
+    if (drawerServicesLink) {
+      drawerServicesLink.addEventListener('click', (e) => {
+        if (window.innerWidth < 992) {
+          const isOpen = drawerServicesPanel.classList.toggle('is-open');
+          drawerServicesItem.classList.toggle('is-hovered', isOpen);
+          if (isOpen) {
+            e.preventDefault();
+          }
+        }
+      });
+    }
+  }
+
+  // Highlight active links in navigation drawer based on current page
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const isServicePage = currentPage.includes('-services.html') || currentPage === 'services.html';
+
+  document.querySelectorAll('.cred-drawer-nav-list a.cred-nav-item').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === currentPage || (currentPage === 'index.html' && href.startsWith('index.html'))) {
+      link.classList.add('active');
+    } else if (isServicePage && href === 'services.html') {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+
+  document.querySelectorAll('.drawer-services-subgrid a.drawer-sub-card').forEach(subLink => {
+    const href = subLink.getAttribute('href');
+    if (href === currentPage) {
+      subLink.classList.add('active');
+    } else {
+      subLink.classList.remove('active');
+    }
+  });
+
   // 4. ISO 9001:2015 Certificate Lightbox Modal
   const certModal = document.getElementById('cert-lightbox-modal');
   const certModalCloseBtn = document.getElementById('cert-modal-close-btn');
@@ -245,7 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 7. Smooth Scroll for Anchor Links
   const navLinks = document.querySelectorAll('.desktop-nav-link, .drawer-link, .footer-link, .hero-actions-group a, .about-action a, .why-action a, .modern-cta-actions a');
   navLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
+    link.addEventListener('click', function (e) {
       const href = this.getAttribute('href');
       if (href && href.startsWith('#') && href.length > 1) {
         const target = document.querySelector(href);

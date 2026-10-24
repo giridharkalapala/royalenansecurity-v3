@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mall &amp; Retail Security Services | Royal Enan Security Services</title>
+  <meta name="description"
+    content="Customer-centric retail and shopping mall security, loss prevention, crowd control, and asset protection by Royal Enan Security Services.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Google Fonts: Rajdhani, Poppins, Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Rajdhani:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6.5.2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- AOS (Animate on Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Global Base Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Service Details Master Stylesheet -->
+  <link rel="stylesheet" href="assets/css/service-details.css">
+</head>
+
+<body class="service-detail-page">
+
+  <!-- ==========================================================================
+       1. Header: About Page Luxury Aesthetic with Clean Container
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container-custom">
+
+      <!-- Brand Logo Emblem -->
+      <a href="index.html" class="cred-header-brand" aria-label="Royal Enan Security Services Homepage">
+        <img src="assets/images/logo.png" alt="Royal Enan Security Emblem" class="cred-brand-emblem" width="80"
+          height="80">
+      </a>
+
+      <!-- Header Actions & Elevated Hamburger Box -->
+      <div class="cred-header-actions">
+        <button type="button" class="cred-hamburger-box" id="menu-toggle-btn" aria-label="Toggle navigation menu"
+          aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="hamburger-label d-none d-sm-inline">MENU</span>
+          <span class="cred-hamburger-bars" aria-hidden="true">
+            <span class="c-bar"></span>
+            <span class="c-bar"></span>
+            <span class="c-bar"></span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Fullscreen Navigation Drawer -->
+  <div class="cred-drawer-overlay" id="mobile-nav-drawer" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-label="Navigation Menu">
+    <div class="cred-drawer-container">
+
+      <!-- Drawer Top Bar -->
+      <div class="cred-drawer-top">
+        <a href="index.html" class="cred-drawer-brand" aria-label="Royal Enan Security Home">
+          <img src="assets/images/logo.png" alt="Royal Enan Emblem" class="cred-drawer-logo" width="80" height="80">
+        </a>
+        <button type="button" class="cred-drawer-close" id="drawer-close-btn" aria-label="Close navigation menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Navigation Links -->
+      <div class="cred-drawer-grid">
+        <div class="cred-drawer-nav-col">
+          <ul class="cred-drawer-nav-list">
+            <li><a href="index.html" class="cred-nav-item drawer-link"><span class="nav-lbl">Home</span></a></li>
+            <li><a href="about.html" class="cred-nav-item drawer-link"><span class="nav-lbl">About Us</span></a></li>
+            <li class="cred-drawer-services-item" id="drawer-services-item">
+              <a href="services.html" class="cred-nav-item drawer-link active" id="drawer-services-link">
+                <span class="nav-lbl">Services</span>
+                <i class="fa-solid fa-chevron-right drawer-nav-arrow" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li><a href="clients.html" class="cred-nav-item drawer-link"><span class="nav-lbl">Clients</span></a></li>
+            <li><a href="contact.html" class="cred-nav-item drawer-link"><span class="nav-lbl">Contact Us</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Right Side: All Services Flyout Panel -->
+        <div class="cred-drawer-services-panel" id="drawer-services-panel" aria-label="Our Specialized Services">
+          
+          <ul class="drawer-services-subgrid">
+            <li>
+              <a href="industrial-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-industry"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Industrial Services</span>
+                  
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="corporate-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-building"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Corporate Services</span>
+                 
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mall-retail-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Mall &amp; Retail Services</span>
+                 
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="hotel-residential-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-hotel"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Hotel &amp; Residential</span>
+                 
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="hospital-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-square-plus"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Hospital Services</span>
+                  
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="building-protection-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Building Protection</span>
+                  
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="housekeeping-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-broom"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Housekeeping Services</span>
+                 
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ==========================================================================
+         2. HERO BANNER: Mall and Retail Services
+         ========================================================================== -->
+    <section class="service-hero-banner" id="service-hero">
+      <div class="hero-bg-wrapper" aria-hidden="true">
+        <img src="assets/images/retail-security.jpg" alt="Vibrant Retail Shopping Mall Center" class="hero-bg-image">
+        <div class="hero-bg-overlay"></div>
+      </div>
+
+      <div class="container-custom hero-content-inner">
+        <div class="row align-items-center g-4">
+
+          <!-- Left Column: Breadcrumb, Eyebrow, Title, Tagline, Highlights -->
+          <div class="col-lg-8 col-md-12" data-aos="fade-right">
+
+            <!-- Breadcrumb Navigation -->
+            <nav class="hero-breadcrumb-nav" aria-label="Breadcrumb">
+              <a href="index.html" class="hero-breadcrumb-link"><i class="fa-solid fa-house"></i> Home</a>
+              <span class="hero-breadcrumb-sep">&gt;</span>
+              <a href="services.html" class="hero-breadcrumb-link">Services</a>
+              <span class="hero-breadcrumb-sep">&gt;</span>
+              <span class="hero-breadcrumb-active">Mall and Retail Services</span>
+            </nav>
+
+            <!-- Category Label -->
+            <div class="hero-category-label">RETAIL &amp; COMMERCE</div>
+
+            <!-- Main Heading with Gold Highlight -->
+            <h1 class="hero-main-title">
+              Mall &amp; Retail <span class="text-gold-highlight">Services</span>
+            </h1>
+
+            <!-- Tagline -->
+            <p class="hero-service-tagline">
+              Safer Shopping. Better Experiences.
+            </p>
+
+            <!-- Supporting Description -->
+            <p class="hero-service-desc">
+              Customer-focused security for shopping malls, retail stores, commercial complexes, protecting shoppers,
+              employees, inventory, and common areas.
+            </p>
+
+            <!-- 3 Highlights Strip with Gold Icons -->
+            <div class="hero-highlights-strip">
+              <div class="hero-highlight-item">
+                <div class="hero-highlight-icon">
+                  <i class="fa-solid fa-users-line"></i>
+                </div>
+                <div class="hero-highlight-text">
+                  Crowd
+                  <span class="hero-highlight-sub">Management</span>
+                </div>
+              </div>
+
+              <div class="hero-highlight-item">
+                <div class="hero-highlight-icon">
+                  <i class="fa-solid fa-shield-heart"></i>
+                </div>
+                <div class="hero-highlight-text">
+                  Retail Loss
+                  <span class="hero-highlight-sub">Prevention</span>
+                </div>
+              </div>
+
+              <div class="hero-highlight-item">
+                <div class="hero-highlight-icon">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="hero-highlight-text">
+                  24/7
+                  <span class="hero-highlight-sub">CCTV Coordination</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Security Officer Visual Frame -->
+          <div class="col-lg-4 d-none d-lg-flex hero-guard-preview-col" data-aos="fade-left">
+            <div class="hero-guard-frame">
+              <img src="assets/images/service-retail.jpg" alt="Retail Security Officer on Duty in Shopping Center"
+                class="hero-guard-img">
+              <div class="hero-guard-badge">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>Shopper Safety Guaranteed</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. MAIN CONTENT AREA WITH SERVICE SIDEBAR
+         ========================================================================== -->
+    <section class="service-details-main-section" id="service-details">
+      <div class="container-custom">
+        <div class="row g-4 g-xl-5">
+
+          <!-- Left Sidebar Column (~25%) -->
+          <aside class="col-lg-4 col-xl-3">
+            <div class="service-sidebar-wrapper">
+
+              <!-- Card 1: Our Services List (Exact Order Required) -->
+              <div class="sidebar-services-card" data-aos="fade-up">
+                <div class="sidebar-card-header">
+                  <div class="sidebar-card-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                  </div>
+                  <h2 class="sidebar-card-title">Our Services</h2>
+                </div>
+
+                <ul class="sidebar-services-nav">
+                  <li class="sidebar-nav-item">
+                    <a href="industrial-services.html" class="sidebar-nav-link">
+                      <span class="sidebar-link-content">
+                        <i class="fa-solid fa-industry sidebar-link-icon"></i>
+                        <span>Industrial Services</span>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-nav-item">
+                    <a href="corporate-services.html" class="sidebar-nav-link">
+                      <span class="sidebar-link-content">
+                        <i class="fa-solid fa-building sidebar-link-icon"></i>
+                        <span>Corporate Services</span>
+                      </span>
+                    </a>
+                  </li>
+
+                  <!-- Active Service Item: Mall and Retail Services -->
+                  <li class="sidebar-nav-item active">
+                    <a href="mall-retail-services.html" class="sidebar-nav-link active" aria-current="page">
+                      <span class="sidebar-link-content">
+                        <i class="fa-solid fa-bag-shopping sidebar-link-icon"></i>
+                        <span>Mall and Retail Services</span>
+                      </span>
+                      <i class="fa-solid fa-chevron-right sidebar-chevron"></i>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-nav-item">
+                    <a href="hotel-residential-services.html" class="sidebar-nav-link">
+                      <span class="sidebar-link-content">
+                        <i class="fa-solid fa-hotel sidebar-link-icon"></i>
+                        <span>Hotel and Residential Services</span>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-nav-item">
+                    <a href="hospital-services.html" class="sidebar-nav-link">
+                      <span class="sidebar-link-content">
+                        <i class="fa-solid fa-square-plus sidebar-link-icon"></i>
+                        <span>Hospital Services</span>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-nav-item">
+                    <a href="building-protection-services.html" class="sidebar-nav-link">
+                      <span class="sidebar-link-content">
+                        <i class="fa-solid fa-shield-halved sidebar-link-icon"></i>
+                        <span>Building Protection Services</span>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-nav-item">
+                    <a href="housekeeping-services.html" class="sidebar-nav-link">
+                      <span class="sidebar-link-content">
+                        <i class="fa-solid fa-broom sidebar-link-icon"></i>
+                        <span>Housekeeping Services</span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Card 2: Promotional Contact Card -->
+              <div class="sidebar-promo-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="sidebar-promo-icon-badge">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <h3 class="sidebar-promo-title">Professional Retail Security Solutions</h3>
+                <p class="sidebar-promo-desc">Safer Shopping, Protected Stores</p>
+                <a href="contact.html" class="btn-sidebar-contact">
+                  <span>Contact Us</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+
+            </div>
+          </aside>
+
+          <!-- Right Content Column (~75%) -->
+          <div class="col-lg-8 col-xl-9">
+
+            <!-- 1. Service Overview Block -->
+            <div class="service-overview-block" data-aos="fade-up">
+              <div class="row g-4 align-items-center">
+
+                <!-- Overview Text -->
+                <div class="col-lg-7">
+                  <div class="section-eyebrow-label">OVERVIEW</div>
+                  <h2 class="overview-heading">
+                    Mall &amp; Retail Security Services at Royal Enan Security Services
+                  </h2>
+                  <p class="overview-desc-paragraph">
+                    Shopping malls and high-traffic retail complexes require a delicate balance of warm customer
+                    hospitality and vigilant loss prevention. Royal Enan protects customers, employees, store
+                    merchandise, and public atrium areas from shrinkage, disruptions, and safety hazards.
+                  </p>
+                  <p class="overview-desc-paragraph">
+                    Our retail guards are trained in crowd control, conflict de-escalation, lost child recovery, parking
+                    management, and coordinated emergency evacuation, ensuring that shoppers enjoy a secure and pleasant
+                    retail experience.
+                  </p>
+                </div>
+
+                <!-- Overview Media Card with Video Preview -->
+                <div class="col-lg-5">
+                  <div class="overview-media-card">
+                    <img src="assets/images/service-retail.jpg" alt="Retail Security Personnel in Busy Shopping Mall"
+                      class="overview-media-img" loading="lazy">
+
+                    <!-- Interactive Play Button -->
+                    <button type="button" class="overview-play-btn-wrap js-open-video-modal"
+                      aria-label="Play Retail Security Video">
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+
+                    <!-- Bottom Glass Badge -->
+                    <div class="overview-media-badge js-open-video-modal" role="button" tabindex="0"
+                      aria-label="Watch How We Keep Shopping Malls Safe">
+                      <div class="overview-badge-icon">
+                        <i class="fa-solid fa-video"></i>
+                      </div>
+                      <span class="overview-badge-text">Watch How We Secure Retail Spaces</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- 2. Feature Strip (5 Concise Features with Icons) -->
+            <div class="service-features-strip" data-aos="fade-up" data-aos-delay="50">
+              <div class="feature-strip-item">
+                <i class="fa-solid fa-users-line feature-strip-icon"></i>
+                <h3 class="feature-strip-title">Crowd Management</h3>
+              </div>
+
+              <div class="feature-strip-item">
+                <i class="fa-solid fa-basket-shopping feature-strip-icon"></i>
+                <h3 class="feature-strip-title">Retail Asset Protection</h3>
+              </div>
+
+              <div class="feature-strip-item">
+                <i class="fa-solid fa-door-open feature-strip-icon"></i>
+                <h3 class="feature-strip-title">Entrance Monitoring</h3>
+              </div>
+
+              <div class="feature-strip-item">
+                <i class="fa-solid fa-video feature-strip-icon"></i>
+                <h3 class="feature-strip-title">CCTV Coordination</h3>
+              </div>
+
+              <div class="feature-strip-item">
+                <i class="fa-solid fa-life-ring feature-strip-icon"></i>
+                <h3 class="feature-strip-title">Emergency Assistance</h3>
+              </div>
+            </div>
+
+            <!-- 3. Why Choose Us Section (Two-Column Layout with Checklist) -->
+            <div class="service-why-block" data-aos="fade-up" data-aos-delay="100">
+              <div class="row align-items-center g-4">
+
+                <!-- Left Column: Security Personnel Photo -->
+                <div class="col-lg-5">
+                  <div class="why-guard-img-frame">
+                    <img src="assets/images/why-guard.jpg"
+                      alt="Royal Enan Security Guard Overlooking Commercial Retail Hub" class="why-guard-img"
+                      loading="lazy">
+                  </div>
+                </div>
+
+                <!-- Right Column: Explanatory Text and Checklist -->
+                <div class="col-lg-7">
+                  <div class="section-eyebrow-label">WHY CHOOSE US</div>
+                  <h2 class="why-choose-heading">
+                    Safer Shopping Spaces that Build Customer Trust
+                  </h2>
+                  <p class="why-choose-desc">
+                    Our retail security teams combine vigilant asset protection with exceptional customer service
+                    etiquette, maintaining an inviting shopping atmosphere while deterring shrink and theft.
+                  </p>
+
+                  <ul class="why-checklist">
+                    <li class="why-checklist-item">
+                      <i class="fa-solid fa-circle-check checklist-icon-gold"></i>
+                      <span>Customer-focused security.</span>
+                    </li>
+                    <li class="why-checklist-item">
+                      <i class="fa-solid fa-circle-check checklist-icon-gold"></i>
+                      <span>Trained retail security personnel.</span>
+                    </li>
+                    <li class="why-checklist-item">
+                      <i class="fa-solid fa-circle-check checklist-icon-gold"></i>
+                      <span>Loss-prevention support.</span>
+                    </li>
+                    <li class="why-checklist-item">
+                      <i class="fa-solid fa-circle-check checklist-icon-gold"></i>
+                      <span>Crowd and queue management.</span>
+                    </li>
+                    <li class="why-checklist-item">
+                      <i class="fa-solid fa-circle-check checklist-icon-gold"></i>
+                      <span>Incident response.</span>
+                    </li>
+                    <li class="why-checklist-item">
+                      <i class="fa-solid fa-circle-check checklist-icon-gold"></i>
+                      <span>Coordinated emergency procedures.</span>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- 4. Safety Tips Section (6-Card Responsive Grid) -->
+            <div class="service-safety-section" data-aos="fade-up" data-aos-delay="150">
+              <div class="safety-tips-header">
+                <div class="safety-eyebrow">SAFETY TIPS</div>
+                <h2 class="safety-title">Mall &amp; Retail Security Services Tips</h2>
+              </div>
+
+              <div class="safety-card-grid">
+                <!-- Tip 1 -->
+                <div class="safety-card">
+                  <i class="fa-solid fa-door-closed safety-card-icon"></i>
+                  <p class="safety-card-text">Monitor entrances and exits.</p>
+                </div>
+
+                <!-- Tip 2 -->
+                <div class="safety-card">
+                  <i class="fa-solid fa-person-walking-dashed-line-arrow-right safety-card-icon"></i>
+                  <p class="safety-card-text">Keep emergency routes clear.</p>
+                </div>
+
+                <!-- Tip 3 -->
+                <div class="safety-card">
+                  <i class="fa-solid fa-triangle-exclamation safety-card-icon"></i>
+                  <p class="safety-card-text">Report suspicious activity promptly.</p>
+                </div>
+
+                <!-- Tip 4 -->
+                <div class="safety-card">
+                  <i class="fa-solid fa-box-archive safety-card-icon"></i>
+                  <p class="safety-card-text">Protect unattended belongings.</p>
+                </div>
+
+                <!-- Tip 5 -->
+                <div class="safety-card">
+                  <i class="fa-solid fa-people-arrows safety-card-icon"></i>
+                  <p class="safety-card-text">Follow crowd-management procedures.</p>
+                </div>
+
+                <!-- Tip 6 -->
+                <div class="safety-card">
+                  <i class="fa-solid fa-walkie-talkie safety-card-icon"></i>
+                  <p class="safety-card-text">Coordinate with mall management during emergencies.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. FINAL SERVICE-SPECIFIC CTA SECTION
+         ========================================================================== -->
+    <section class="service-cta-banner-section" id="service-cta">
+      <div class="cta-bg-layer" aria-hidden="true">
+        <img src="assets/images/retail-security.jpg" alt="Commercial Shopping Mall Complex" class="cta-bg-image"
+          loading="lazy">
+        <div class="cta-overlay-layer"></div>
+      </div>
+
+      <div class="container-custom cta-inner-content">
+        <div class="row align-items-center justify-content-between g-4">
+
+          <!-- Left Column -->
+          <div class="col-lg-7" data-aos="fade-right">
+            <div class="cta-eyebrow">LET'S SECURE TOGETHER</div>
+            <h2 class="cta-main-title">
+              Need a Customized Security Solution for <span class="text-gold-highlight">Your Shopping Center?</span>
+            </h2>
+            <p class="cta-desc-text">
+              Protect your shoppers, retail tenants, and merchandise with our specialized loss prevention and crowd
+              management experts.
+            </p>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-lg-5" data-aos="fade-left">
+            <div class="cta-action-wrap">
+              <a href="contact.html" class="btn-cta-gold-pill">
+                <span>Get a Free Quote</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+              <div class="cta-indicators-list">
+                <div class="cta-indicator-badge">
+                  <i class="fa-solid fa-headset"></i>
+                  <span>Quick Consultation</span>
+                </div>
+                <div class="cta-indicator-badge">
+                  <i class="fa-solid fa-file-shield"></i>
+                  <span>Customized Plan</span>
+                </div>
+                <div class="cta-indicator-badge">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <span>Reliable Support</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. NEWSLETTER SUBSCRIPTION SECTION
+         ========================================================================== -->
+    <section class="site-newsletter-section" id="newsletter">
+      <div class="container-custom">
+        <div class="newsletter-box">
+
+          <div class="newsletter-left">
+            <div class="newsletter-icon-circle">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <h3 class="newsletter-heading">Join our newsletter and get latest updates</h3>
+              <p class="newsletter-subtext">Stay informed on retail safety guidelines, queue protocols, and customer
+                care trends.</p>
+            </div>
+          </div>
+
+          <form class="newsletter-form" id="newsletter-form" novalidate>
+            <div class="newsletter-input-group">
+              <input type="email" class="newsletter-input" id="newsletter-email" placeholder="Enter your email address"
+                required aria-label="Email address for newsletter">
+              <div class="newsletter-feedback" id="newsletter-feedback" role="alert"></div>
+            </div>
+            <button type="submit" class="btn-newsletter-subscribe">Subscribe</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       7. SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="row g-5 footer-grid-row">
+
+        <!-- Column 1: Company Info -->
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="footer-brand" aria-label="Royal Enan Security Home">
+            <img src="assets/images/logo.png" alt="Royal Enan Security Logo" class="footer-logo-img" width="52"
+              height="52">
+          </a>
+          <p class="footer-bio">
+            Royal Enan Security Services offers reliable security solutions for industries, corporate offices,
+            residential communities, and more.
+          </p>
+          <div class="footer-social-row" aria-label="Social media channels">
+            <a href="https://facebook.com" class="social-circle-btn" aria-label="Facebook" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://linkedin.com" class="social-circle-btn" aria-label="LinkedIn" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://instagram.com" class="social-circle-btn" aria-label="Instagram" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" class="social-circle-btn" aria-label="YouTube" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link"><span class="caret-gold">›</span> Home</a></li>
+            <li><a href="about.html" class="footer-link"><span class="caret-gold">›</span> About Us</a></li>
+            <li><a href="services.html" class="footer-link active"><span class="caret-gold">›</span> Services</a></li>
+            <li><a href="clients.html" class="footer-link"><span class="caret-gold">›</span> Clients</a></li>
+            <li><a href="contact.html" class="footer-link"><span class="caret-gold">›</span> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Our Services -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h3 class="footer-col-title">Our Services</h3>
+          <ul class="footer-links-list">
+            <li><a href="industrial-services.html" class="footer-link"><span class="caret-gold">›</span> Industrial
+                Security</a></li>
+            <li><a href="corporate-services.html" class="footer-link"><span class="caret-gold">›</span> Corporate
+                Security</a></li>
+            <li><a href="mall-retail-services.html" class="footer-link"><span class="caret-gold">›</span> Mall &amp;
+                Retail</a></li>
+            <li><a href="hotel-residential-services.html" class="footer-link"><span class="caret-gold">›</span> Hotel
+                &amp; Residential</a></li>
+            <li><a href="hospital-services.html" class="footer-link"><span class="caret-gold">›</span> Hospital
+                Security</a></li>
+            <li><a href="building-protection-services.html" class="footer-link"><span class="caret-gold">›</span>
+                Building Protection</a></li>
+            <li><a href="housekeeping-services.html" class="footer-link"><span class="caret-gold">›</span> Housekeeping
+                Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Us -->
+        <div class="col-lg-3 col-md-6" id="contact">
+          <h3 class="footer-col-title">Contact Us</h3>
+          <ul class="footer-contact-list">
+            <li class="contact-item">
+              <div class="contact-icon-gold"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-text">
+                <a href="tel:8096947362" class="contact-link">8096947362</a>
+                <a href="tel:+919100547892" class="contact-link">+91 91005 47892</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="contact-icon-gold"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-text">
+                <a href="mailto:info@royalenansecurity.com" class="contact-link">info@royalenansecurity.com</a>
+                <a href="mailto:hyderabad@royalenansecurity.com"
+                  class="contact-link">hyderabad@royalenansecurity.com</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="contact-icon-gold"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-text">
+                <span>D No: 1-8-85/46 govt college, vidyanagar, Hyderabad 500044</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Legal Bar -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">&copy; 2026 <b style="font-weight: 800; color: #ffffff;">Royal Enan Security
+            Services</b>.All Rights Reserved. designed & developed by <a href="https://sunseaz.com" target="_blank"><b
+              style="font-weight: 800; color: #ffffff;">SunSeaz</b></a></p>
+        <button type="button" class="back-to-top-circle" id="back-to-top-btn" aria-label="Back to Top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Video Lightbox Modal -->
+  <div class="service-video-modal" id="service-video-modal" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-label="Security Video Player">
+    <div class="video-modal-dialog">
+      <button type="button" class="video-modal-close" id="video-modal-close-btn" aria-label="Close Video Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="video-wrapper">
+        <video id="service-video-player" controls preload="metadata" poster="assets/images/service-retail.jpg">
+          <source src="assets/videos/hero-security.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/service-details.js"></script>
+</body>
+
+</html>

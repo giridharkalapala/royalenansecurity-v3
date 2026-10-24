@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Security &amp; Facility Services | Royal Enan Security Services</title>
+  <meta name="description"
+    content="Explore comprehensive security and facility management services from Royal Enan Security Services: Industrial, Corporate, Mall & Retail, Hotel & Residential, Hospital, Building Protection, and Housekeeping.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Google Fonts: Rajdhani, Poppins, Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Rajdhani:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6.5.2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- AOS (Animate on Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="services-page">
+
+  <!-- ==========================================================================
+       1. Header: Fixed Brand Logo & Sticky Hamburger Navigation Menu
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container-custom">
+
+      <!-- Brand Logo Emblem -->
+      <a href="index.html" class="cred-header-brand" aria-label="Royal Enan Security Services Homepage">
+        <img src="assets/images/logo.png" alt="Royal Enan Security Emblem" class="cred-brand-emblem" width="80"
+          height="80">
+      </a>
+
+      <!-- Header Actions & Elevated Hamburger Box -->
+      <div class="cred-header-actions">
+        <button type="button" class="cred-hamburger-box" id="menu-toggle-btn" aria-label="Toggle navigation menu"
+          aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="hamburger-label d-none d-sm-inline">MENU</span>
+          <span class="cred-hamburger-bars" aria-hidden="true">
+            <span class="c-bar"></span>
+            <span class="c-bar"></span>
+            <span class="c-bar"></span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Fullscreen Navigation Drawer -->
+  <div class="cred-drawer-overlay" id="mobile-nav-drawer" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-label="Navigation Menu">
+    <div class="cred-drawer-container">
+
+      <!-- Drawer Top Bar -->
+      <div class="cred-drawer-top">
+        <a href="index.html" class="cred-drawer-brand" aria-label="Royal Enan Security Home">
+          <img src="assets/images/logo.png" alt="Royal Enan Emblem" class="cred-drawer-logo" width="80" height="80">
+        </a>
+        <button type="button" class="cred-drawer-close" id="drawer-close-btn" aria-label="Close navigation menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Navigation Links -->
+      <div class="cred-drawer-grid">
+        <div class="cred-drawer-nav-col">
+          <ul class="cred-drawer-nav-list">
+            <li><a href="index.html" class="cred-nav-item drawer-link"><span class="nav-lbl">Home</span></a></li>
+            <li><a href="about.html" class="cred-nav-item drawer-link"><span class="nav-lbl">About Us</span></a></li>
+            <li class="cred-drawer-services-item" id="drawer-services-item">
+              <a href="services.html" class="cred-nav-item drawer-link active" id="drawer-services-link">
+                <span class="nav-lbl">Services</span>
+                <i class="fa-solid fa-chevron-right drawer-nav-arrow" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li><a href="clients.html" class="cred-nav-item drawer-link"><span class="nav-lbl">Clients</span></a></li>
+            <li><a href="contact.html" class="cred-nav-item drawer-link"><span class="nav-lbl">Contact Us</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Right Side: All Services Flyout Panel -->
+        <div class="cred-drawer-services-panel" id="drawer-services-panel" aria-label="Our Specialized Services">
+          
+          <ul class="drawer-services-subgrid">
+            <li>
+              <a href="industrial-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-industry"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Industrial Services</span>
+                  
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="corporate-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-building"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Corporate Services</span>
+                 
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mall-retail-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Mall &amp; Retail Services</span>
+                 
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="hotel-residential-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-hotel"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Hotel &amp; Residential</span>
+                 
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="hospital-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-square-plus"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Hospital Services</span>
+                  
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="building-protection-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Building Protection</span>
+                  
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="housekeeping-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-broom"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Housekeeping Services</span>
+                 
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         2. HERO SECTION: Full-Width Corporate Security Services Header
+         ========================================================================== -->
+    <section class="services-hero-section" id="services-hero">
+
+      <!-- Background Image Layer with Cinematic Dusk Lighting -->
+      <div class="services-hero-bg-container" aria-hidden="true">
+        <img src="assets/images/about-hero-guard.jpg"
+          alt="Royal Enan Professional Security Officer at Commercial Center" class="services-hero-bg-img">
+        <div class="services-hero-overlay"></div>
+      </div>
+
+      <div class="container-custom services-hero-content">
+        <div class="row align-items-center">
+
+          <!-- Left Column: Breadcrumb, Main Title, Cyan Tagline & Description -->
+          <div class="col-lg-7 col-md-12 services-hero-left" data-aos="fade-right" data-aos-duration="800">
+
+            <!-- Breadcrumb Navigation -->
+            <nav class="services-breadcrumb" aria-label="Breadcrumb">
+              <a href="index.html" class="breadcrumb-home-link">
+                <i class="fa-solid fa-house"></i> Home
+              </a>
+              <span class="breadcrumb-sep">/</span>
+              <span class="breadcrumb-current">Our Services</span>
+            </nav>
+
+            <!-- Main Heading with Gold Word Highlight -->
+            <h1 class="services-hero-title">
+              Security Services<br>
+              <span class="text-gold-highlight">You Can Trust</span>
+            </h1>
+
+            <!-- Supporting Tagline in Italic Cyan -->
+            <p class="services-hero-tagline">
+              <em>Innovating the future security</em>
+            </p>
+
+            <!-- Supporting Description Paragraph -->
+            <p class="services-hero-desc">
+              We provide reliable, professional and customized security solutions to keep your people, assets and
+              businesses safe.
+            </p>
+          </div>
+
+          <!-- Right Column: 3 Compact Trust Indicators -->
+          <div class="col-lg-5 col-md-12 services-hero-right" data-aos="fade-left" data-aos-duration="850">
+            <div class="services-trust-panel">
+
+              <!-- Trust Item 1 -->
+              <div class="services-trust-item">
+                <div class="services-trust-badge">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="services-trust-text">
+                  <span class="trust-title">Trusted</span>
+                  <span class="trust-subtitle">Security Partner</span>
+                </div>
+              </div>
+
+              <!-- Trust Item 2 -->
+              <div class="services-trust-item">
+                <div class="services-trust-badge">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="services-trust-text">
+                  <span class="trust-title">Professional</span>
+                  <span class="trust-subtitle">Security Team</span>
+                </div>
+              </div>
+
+              <!-- Trust Item 3 -->
+              <div class="services-trust-item">
+                <div class="services-trust-badge">
+                  <span class="badge-247-icon">24/7</span>
+                </div>
+                <div class="services-trust-text">
+                  <span class="trust-title">24/7 Support</span>
+                  <span class="trust-subtitle">&amp; Monitoring</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. EMERGENCY CONTACT BAR: Full-Width Gold Action Strip
+         ========================================================================== -->
+    <section class="emergency-contact-bar" id="emergency-bar" aria-label="Emergency Dispatch and Hotline">
+      <div class="container-custom">
+        <div class="emergency-bar-inner">
+
+          <!-- Left Section: Prominent Circular Phone Icon & Click-to-Call Number -->
+          <div class="emergency-left-group">
+            <div class="emergency-phone-circle">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="emergency-text-group">
+              <span class="emergency-label">24/7 Available. Call us Immediately</span>
+              <a href="tel:8096947362" class="emergency-phone-link"
+                aria-label="Call Royal Enan Dispatch Hotline at 8096947362">
+                8096947362
+              </a>
+            </div>
+          </div>
+
+          <!-- Center Section: 3 Compact Service Indicators -->
+          <div class="emergency-center-group d-none d-md-flex">
+            <div class="emergency-indicator">
+              <div class="indicator-icon"><i class="fa-solid fa-headset"></i></div>
+              <span class="indicator-text">Quick Response</span>
+            </div>
+            <div class="emergency-indicator">
+              <div class="indicator-icon"><i class="fa-solid fa-shield-heart"></i></div>
+              <span class="indicator-text">Reliable Services</span>
+            </div>
+            <div class="emergency-indicator">
+              <div class="indicator-icon"><i class="fa-solid fa-users-gear"></i></div>
+              <span class="indicator-text">Expert Team</span>
+            </div>
+          </div>
+
+          <!-- Right Section: Solid White Contact Us Button -->
+          <div class="emergency-right-group">
+            <a href="contact.html" class="emergency-contact-btn" id="emergency-contact-btn">
+              <span>CONTACT US</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. SERVICES INTRODUCTION SECTION: Centered Eyebrow & Lead
+         ========================================================================== -->
+    <section class="services-intro-section" id="services-intro">
+      <div class="container-custom">
+        <div class="services-intro-content text-center" data-aos="fade-up">
+
+          <!-- Cyan Eyebrow with Decorative Lines -->
+          <div class="services-eyebrow-container">
+            <span class="eyebrow-decor-line"></span>
+            <span class="services-eyebrow-label">OUR SERVICES</span>
+            <span class="eyebrow-decor-line"></span>
+          </div>
+
+          <!-- Main Heading with Gold Word Highlight -->
+          <h2 class="services-intro-heading">
+            Our <span class="text-gold-highlight">Security &amp; Facility</span> Services
+          </h2>
+
+          <!-- Descriptive Subtitle Paragraph -->
+          <p class="services-intro-desc">
+            We offer a comprehensive range of security and facility management services to meet the diverse needs
+            of businesses, institutions and individuals. Our trained professionals and customized solutions ensure
+            a safer environment for your people and assets.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. MAIN SERVICES GRID: 6 Premium Service Cards (3x2 Desktop Layout)
+         ========================================================================== -->
+    <section class="services-grid-section" id="services-grid-section">
+      <div class="container-custom">
+        <div class="row g-4 services-cards-row">
+
+          <!-- Service 1: Industrial Security Services -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+            <article class="service-card" id="service-industrial">
+              <div class="service-card-media">
+                <img src="assets/images/service-industrial.jpg"
+                  alt="Industrial Security Services at Manufacturing Facility" class="service-card-img" loading="lazy">
+                <div class="service-card-overlay"></div>
+                <div class="service-badge-icon" aria-hidden="true">
+                  <i class="fa-solid fa-industry"></i>
+                </div>
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-title">Industrial Security Services</h3>
+                <p class="service-card-desc">
+                  Comprehensive security for manufacturing units, warehouses and industrial premises.
+                </p>
+                <a href="industrial-services.html" class="service-explore-link"
+                  aria-label="Explore Industrial Security Services">
+                  <span>Explore Service</span>
+                  <i class="fa-solid fa-arrow-right link-arrow"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Service 2: Corporate Security & Services -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="service-card" id="service-corporate">
+              <div class="service-card-media">
+                <img src="assets/images/service-corporate.jpg"
+                  alt="Corporate Security & Services at Modern Office Campus" class="service-card-img" loading="lazy">
+                <div class="service-card-overlay"></div>
+                <div class="service-badge-icon" aria-hidden="true">
+                  <i class="fa-solid fa-building"></i>
+                </div>
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-title">Corporate Security &amp; Services</h3>
+                <p class="service-card-desc">
+                  Professional security solutions for corporate offices and business parks.
+                </p>
+                <a href="corporate-services.html" class="service-explore-link"
+                  aria-label="Explore Corporate Security and Services">
+                  <span>Explore Service</span>
+                  <i class="fa-solid fa-arrow-right link-arrow"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Service 3: Mall and Retail Security & Services -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <article class="service-card" id="service-retail">
+              <div class="service-card-media">
+                <img src="assets/images/service-retail.jpg" alt="Mall and Retail Security & Services in Shopping Mall"
+                  class="service-card-img" loading="lazy">
+                <div class="service-card-overlay"></div>
+                <div class="service-badge-icon" aria-hidden="true">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-title">Mall and Retail Security &amp; Services</h3>
+                <p class="service-card-desc">
+                  Ensuring a safe shopping environment for customers, staff and assets.
+                </p>
+                <a href="mall-retail-services.html" class="service-explore-link"
+                  aria-label="Explore Mall and Retail Security Services">
+                  <span>Explore Service</span>
+                  <i class="fa-solid fa-arrow-right link-arrow"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Service 4: Hotel and Residential Security & Services -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article class="service-card" id="service-hotel">
+              <div class="service-card-media">
+                <img src="assets/images/service-hotel.jpg" alt="Hotel and Residential Security in Luxury Lobby"
+                  class="service-card-img" loading="lazy">
+                <div class="service-card-overlay"></div>
+                <div class="service-badge-icon" aria-hidden="true">
+                  <i class="fa-solid fa-hotel"></i>
+                </div>
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-title">Hotel and Residential Security &amp; Services</h3>
+                <p class="service-card-desc">
+                  Safety and peace of mind for hotels, residences and gated communities.
+                </p>
+                <a href="hotel-residential-services.html" class="service-explore-link"
+                  aria-label="Explore Hotel and Residential Security Services">
+                  <span>Explore Service</span>
+                  <i class="fa-solid fa-arrow-right link-arrow"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Service 5: Hospital Security & Services -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <article class="service-card" id="service-hospital">
+              <div class="service-card-media">
+                <img src="assets/images/service-hospital.jpg" alt="Hospital Security Officer in Healthcare Facility"
+                  class="service-card-img" loading="lazy">
+                <div class="service-card-overlay"></div>
+                <div class="service-badge-icon" aria-hidden="true">
+                  <i class="fa-solid fa-square-plus"></i>
+                </div>
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-title">Hospital Security &amp; Services</h3>
+                <p class="service-card-desc">
+                  Specialized security for hospitals, clinics and healthcare institutions.
+                </p>
+                <a href="hospital-services.html" class="service-explore-link"
+                  aria-label="Explore Hospital Security Services">
+                  <span>Explore Service</span>
+                  <i class="fa-solid fa-arrow-right link-arrow"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Service 6: Building Protection Security & Services -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <article class="service-card" id="service-building">
+              <div class="service-card-media">
+                <img src="assets/images/service-building-protection.jpg"
+                  alt="Building Protection Security Guard at Commercial Access Entrance" class="service-card-img"
+                  loading="lazy">
+                <div class="service-card-overlay"></div>
+                <div class="service-badge-icon" aria-hidden="true">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+              </div>
+              <div class="service-card-body">
+                <h3 class="service-card-title">Building Protection Security &amp; Services</h3>
+                <p class="service-card-desc">
+                  Effective access control and surveillance for commercial and residential buildings.
+                </p>
+                <a href="building-protection-services.html" class="service-explore-link"
+                  aria-label="Explore Building Protection Security Services">
+                  <span>Explore Service</span>
+                  <i class="fa-solid fa-arrow-right link-arrow"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+        <!-- ==========================================================================
+             6. HOUSEKEEPING SERVICES FEATURE BANNER: Wide Horizontal Layout
+             ========================================================================== -->
+        <div class="housekeeping-banner-container mt-5" data-aos="fade-up" data-aos-delay="200"
+          id="service-housekeeping">
+          <div class="housekeeping-banner">
+            <div class="row g-0 align-items-center">
+
+              <!-- Left Side: Professional Housekeeping Personnel Photo -->
+              <div class="col-lg-6 col-md-12 housekeeping-img-col">
+                <div class="housekeeping-img-wrapper">
+                  <img src="assets/images/service-housekeeping.jpg"
+                    alt="Royal Enan Professional Housekeeping and Facility Cleaning Team" class="housekeeping-img"
+                    loading="lazy">
+                  <div class="housekeeping-img-gradient-overlay"></div>
+                </div>
+              </div>
+
+              <!-- Right Side: Content, Icon Badge & Explore Link -->
+              <div class="col-lg-6 col-md-12 housekeeping-content-col">
+                <div class="housekeeping-content-inner">
+
+                  <!-- Circular Gold Icon Badge -->
+                  <div class="housekeeping-badge-icon" aria-hidden="true">
+                    <i class="fa-solid fa-broom"></i>
+                  </div>
+
+                  <div class="housekeeping-text-wrap">
+                    <h3 class="housekeeping-title">Housekeeping Services</h3>
+                    <p class="housekeeping-desc">
+                      Professional housekeeping services to maintain clean, hygienic and healthy environments.
+                    </p>
+                    <a href="housekeeping-services.html" class="housekeeping-explore-link"
+                      aria-label="Explore Housekeeping Services">
+                      <span>Explore Service</span>
+                      <i class="fa-solid fa-arrow-right link-arrow"></i>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. FINAL CALL-TO-ACTION SECTION: Full-Width Night Architecture & Free Quote
+         ========================================================================== -->
+    <section class="services-cta-section" id="services-cta">
+
+      <!-- Background Architecture Layer with Dark Night Overlay -->
+      <div class="services-cta-bg-container" aria-hidden="true">
+        <img src="assets/images/hero-building.jpg" alt="Modern Commercial Headquarters Architecture at Night"
+          class="services-cta-bg-img" loading="lazy">
+        <div class="services-cta-overlay"></div>
+      </div>
+
+      <div class="container-custom services-cta-content">
+        <div class="row align-items-center justify-content-between g-5">
+
+          <!-- Left Column: Cyan Tagline, Large Title & Lead Paragraph -->
+          <div class="col-lg-7" data-aos="fade-right">
+
+            <!-- Cyan Eyebrow Label with Thin Line -->
+            <div class="services-cta-eyebrow-wrap">
+              <span class="cta-eyebrow-text">LET'S SECURE TOGETHER</span>
+              <span class="cta-eyebrow-line"></span>
+            </div>
+
+            <!-- Main Heading with Gold Highlighted Phrase -->
+            <h2 class="services-cta-heading">
+              Need a Security Solution<br>
+              Tailored to <span class="text-gold-highlight">Your Business?</span>
+            </h2>
+
+            <!-- Supporting Description -->
+            <p class="services-cta-desc">
+              Get in touch with our experts today for customized security and facility management solutions that meet
+              your specific needs.
+            </p>
+          </div>
+
+          <!-- Right Column: Large Gold Button & 3 Compact Indicators Below -->
+          <div class="col-lg-5" data-aos="fade-left">
+            <div class="services-cta-right-box">
+
+              <!-- Primary Action Button: Large Gold Pill -->
+              <a href="contact.html" class="btn-cta-gold-large" id="services-get-quote-btn"
+                aria-label="Get a Free Security Quote from Royal Enan Experts">
+                <span>Get a Free Quote</span>
+                <i class="fa-solid fa-arrow-right ms-2"></i>
+              </a>
+
+              <!-- 3 Compact Verification Indicators -->
+              <div class="services-cta-indicators-row">
+                <div class="cta-indicator-item">
+                  <div class="cta-indicator-icon"><i class="fa-solid fa-headset"></i></div>
+                  <span class="cta-indicator-label">Quick Consultation</span>
+                </div>
+
+                <div class="cta-indicator-item">
+                  <div class="cta-indicator-icon"><i class="fa-solid fa-file-shield"></i></div>
+                  <span class="cta-indicator-label">Customized Plan</span>
+                </div>
+
+                <div class="cta-indicator-item">
+                  <div class="cta-indicator-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                  <span class="cta-indicator-label">Reliable Support</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       8. SITE FOOTER: Black/Deep Navy 4-Column Layout with Verified Details & Legal Bar
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="row g-5 footer-grid-row">
+
+        <!-- Column 1: Company Info & Social Channels -->
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="footer-brand" aria-label="Royal Enan Security Home">
+            <img src="assets/images/logo.png" alt="Royal Enan Security Logo" class="footer-logo-img" width="52"
+              height="52">
+          </a>
+          <p class="footer-bio">
+            Royal Enan Security Services offers reliable security solutions for industries, corporate offices,
+            residential communities, and more.
+          </p>
+          <div class="footer-social-row" aria-label="Social media channels">
+            <a href="https://facebook.com" class="social-circle-btn" aria-label="Facebook" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://linkedin.com" class="social-circle-btn" aria-label="LinkedIn" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://instagram.com" class="social-circle-btn" aria-label="Instagram" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" class="social-circle-btn" aria-label="YouTube" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link"><span class="caret-gold">›</span> Home</a></li>
+            <li><a href="about.html" class="footer-link"><span class="caret-gold">›</span> About Us</a></li>
+            <li><a href="services.html" class="footer-link active"><span class="caret-gold">›</span> Services</a></li>
+            <li><a href="clients.html" class="footer-link"><span class="caret-gold">›</span> Clients</a></li>
+            <li><a href="contact.html" class="footer-link"><span class="caret-gold">›</span> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Our Services -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h3 class="footer-col-title">Our Services</h3>
+          <ul class="footer-links-list">
+            <li><a href="industrial-services.html" class="footer-link"><span class="caret-gold">›</span> Industrial
+                Security</a></li>
+            <li><a href="corporate-services.html" class="footer-link"><span class="caret-gold">›</span> Corporate
+                Security</a></li>
+            <li><a href="mall-retail-services.html" class="footer-link"><span class="caret-gold">›</span> Mall &amp; Retail
+                Security</a></li>
+            <li><a href="hotel-residential-services.html" class="footer-link"><span class="caret-gold">›</span> Hotel &amp;
+                Residential</a></li>
+            <li><a href="hospital-services.html" class="footer-link"><span class="caret-gold">›</span> Hospital Security</a>
+            </li>
+            <li><a href="building-protection-services.html" class="footer-link"><span class="caret-gold">›</span> Building
+                Protection</a></li>
+            <li><a href="housekeeping-services.html" class="footer-link"><span class="caret-gold">›</span> Housekeeping
+                Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Us (Verified Real Details) -->
+        <div class="col-lg-3 col-md-6" id="contact">
+          <h3 class="footer-col-title">Contact Us</h3>
+          <ul class="footer-contact-list">
+            <li class="contact-item">
+              <div class="contact-icon-gold"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-text">
+                <a href="tel:8096947362" class="contact-link">8096947362</a>
+                <a href="tel:+919100547892" class="contact-link">+91 91005 47892</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="contact-icon-gold"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-text">
+                <a href="mailto:info@royalenansecurity.com" class="contact-link">info@royalenansecurity.com</a>
+                <a href="mailto:hyderabad@royalenansecurity.com"
+                  class="contact-link">hyderabad@royalenansecurity.com</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="contact-icon-gold"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-text">
+                <span>D No: 1-8-85/46 govt college, vidyanagar, Hyderabad 500044</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Legal Bar with Divider -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">&copy; 2026 <b style="font-weight: 800; color: #ffffff;">Royal Enan Security
+            Services</b>.All Rights Reserved. designed & developed by <a href="https://sunseaz.com" target="_blank"><b
+              style="font-weight: 800; color: #ffffff;">SunSeaz</b></a></p>
+        <button type="button" class="back-to-top-circle" id="back-to-top-btn" aria-label="Back to Top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts: Bootstrap 5.3.3 Bundle, AOS, Main JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

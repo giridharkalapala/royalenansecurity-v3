@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us &amp; Rapid Command Dispatch | Royal Enan Security Services</title>
+  <meta name="description"
+    content="Connect with Royal Enan Security Services command headquarters in Hyderabad. 24/7 emergency dispatch, free security risk assessment, and rapid guard mobilization.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Google Fonts: Rajdhani, Poppins, Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Rajdhani:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6.5.2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- AOS (Animate on Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="contact-page">
+
+  <!-- ==========================================================================
+       1. Header: Fixed Brand Logo & Sticky Hamburger Navigation Menu
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container-custom">
+
+      <!-- Brand Logo Emblem -->
+      <a href="index.html" class="cred-header-brand" aria-label="Royal Enan Security Services Homepage">
+        <img src="assets/images/logo.png" alt="Royal Enan Security Emblem" class="cred-brand-emblem" width="80"
+          height="80">
+      </a>
+
+      <!-- Header Actions & Elevated Hamburger Box -->
+      <div class="cred-header-actions">
+        <button type="button" class="cred-hamburger-box" id="menu-toggle-btn" aria-label="Toggle navigation menu"
+          aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="hamburger-label d-none d-sm-inline">MENU</span>
+          <span class="cred-hamburger-bars" aria-hidden="true">
+            <span class="c-bar"></span>
+            <span class="c-bar"></span>
+            <span class="c-bar"></span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Fullscreen Navigation Drawer -->
+  <div class="cred-drawer-overlay" id="mobile-nav-drawer" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-label="Navigation Menu">
+    <div class="cred-drawer-container">
+
+      <!-- Drawer Top Bar -->
+      <div class="cred-drawer-top">
+        <a href="index.html" class="cred-drawer-brand" aria-label="Royal Enan Security Home">
+          <img src="assets/images/logo.png" alt="Royal Enan Emblem" class="cred-drawer-logo" width="80" height="80">
+        </a>
+        <button type="button" class="cred-drawer-close" id="drawer-close-btn" aria-label="Close navigation menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Navigation Links -->
+      <div class="cred-drawer-grid">
+        <div class="cred-drawer-nav-col">
+          <ul class="cred-drawer-nav-list">
+            <li><a href="index.html" class="cred-nav-item drawer-link"><span class="nav-lbl">Home</span></a></li>
+            <li><a href="about.html" class="cred-nav-item drawer-link"><span class="nav-lbl">About Us</span></a></li>
+            <li class="cred-drawer-services-item" id="drawer-services-item">
+              <a href="services.html" class="cred-nav-item drawer-link" id="drawer-services-link">
+                <span class="nav-lbl">Services</span>
+                <i class="fa-solid fa-chevron-right drawer-nav-arrow" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li><a href="clients.html" class="cred-nav-item drawer-link"><span class="nav-lbl">Clients</span></a></li>
+            <li><a href="contact.html" class="cred-nav-item drawer-link active"><span class="nav-lbl">Contact Us</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Right Side: All Services Flyout Panel -->
+        <div class="cred-drawer-services-panel" id="drawer-services-panel" aria-label="Our Specialized Services">
+          
+          <ul class="drawer-services-subgrid">
+            <li>
+              <a href="industrial-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-industry"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Industrial Services</span>
+                  
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="corporate-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-building"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Corporate Services</span>
+                 
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mall-retail-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Mall &amp; Retail Services</span>
+                 
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="hotel-residential-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-hotel"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Hotel &amp; Residential</span>
+                 
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="hospital-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-square-plus"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Hospital Services</span>
+                  
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="building-protection-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Building Protection</span>
+                  
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="housekeeping-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-broom"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Housekeeping Services</span>
+                 
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         2. HERO SECTION: Full-Width Contact & Command Header
+         ========================================================================== -->
+    <section class="services-hero-section contact-hero-section" id="contact-hero">
+
+      <!-- Background Image Layer -->
+      <div class="services-hero-bg-container" aria-hidden="true">
+        <img src="assets/images/about-hero-guard.jpg"
+          alt="Royal Enan Professional Security Officer at Commercial Center" class="services-hero-bg-img">
+        <div class="services-hero-overlay"></div>
+      </div>
+
+      <div class="container-custom services-hero-content">
+        <div class="row align-items-center">
+
+          <!-- Left Column -->
+          <div class="col-lg-7 col-md-12 services-hero-left" data-aos="fade-right" data-aos-duration="800">
+
+            <nav class="services-breadcrumb" aria-label="Breadcrumb">
+              <a href="index.html" class="breadcrumb-home-link">
+                <i class="fa-solid fa-house"></i> Home
+              </a>
+              <span class="breadcrumb-sep">/</span>
+              <span class="breadcrumb-current">Contact Us</span>
+            </nav>
+
+            <h1 class="services-hero-title">
+              Connect With Our<br>
+              <span class="text-gold-highlight">Security Command</span>
+            </h1>
+
+            <p class="services-hero-tagline">
+              <em>24/7 National Dispatch &bull; Rapid Guard Mobilization &bull; Risk Audits</em>
+            </p>
+
+            <p class="services-hero-desc">
+              Get immediate assistance from Royal Enan Security Services. Whether you require an on-site security risk
+              audit, guard deployment, or specialized facility management, our command team is standing by 24/7.
+            </p>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-lg-5 col-md-12 services-hero-right" data-aos="fade-left" data-aos-duration="850">
+            <div class="services-trust-panel">
+
+              <div class="services-trust-item">
+                <div class="services-trust-badge">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div class="services-trust-text">
+                  <span class="trust-title">15-Minute Response</span>
+                  <span class="trust-subtitle">Rapid Escalation</span>
+                </div>
+              </div>
+
+              <div class="services-trust-item">
+                <div class="services-trust-badge">
+                  <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div class="services-trust-text">
+                  <span class="trust-title">Direct Command Line</span>
+                  <span class="trust-subtitle">24/7 Active Hotline</span>
+                </div>
+              </div>
+
+              <div class="services-trust-item">
+                <div class="services-trust-badge">
+                  <i class="fa-solid fa-clipboard-check"></i>
+                </div>
+                <div class="services-trust-text">
+                  <span class="trust-title">Free Risk Audit</span>
+                  <span class="trust-subtitle">Complimentary Review</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. EMERGENCY CONTACT STRIP: Immediate Direct Call
+         ========================================================================== -->
+    <section class="emergency-contact-bar" aria-label="Emergency Dispatch and Hotline">
+      <div class="container-custom">
+        <div class="emergency-bar-inner">
+
+          <!-- Left Section: Prominent Circular Phone Icon & Click-to-Call Number -->
+          <div class="emergency-left-group">
+            <div class="emergency-phone-circle">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="emergency-text-group">
+              <span class="emergency-label">24/7 Command Hotline. Call Us Directly</span>
+              <a href="tel:8096947362" class="emergency-phone-link"
+                aria-label="Call Royal Enan Dispatch Hotline at 8096947362">
+                8096947362
+              </a>
+            </div>
+          </div>
+
+          <!-- Center Section: Key Support Metrics -->
+          <div class="emergency-center-group d-none d-md-flex">
+            <div class="emergency-indicator">
+              <div class="indicator-icon"><i class="fa-solid fa-envelope"></i></div>
+              <span class="indicator-text">info@royalenansecurity.com</span>
+            </div>
+            <div class="emergency-indicator">
+              <div class="indicator-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <span class="indicator-text">Vidyanagar, Hyderabad</span>
+            </div>
+          </div>
+
+          <!-- Right Section: Direct Hotline Alternate -->
+          <div class="emergency-right-group">
+            <a href="tel:+919100547892" class="emergency-contact-btn" aria-label="Call Alternate Line">
+              <i class="fa-solid fa-headset me-1"></i>
+              <span>+91 91005 47892</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. CONTACT & CONSULTATION SECTION: 2-Column Split Layout
+         ========================================================================== -->
+    <section class="contact-main-section py-5" id="contact-hub">
+      <div class="container-custom">
+        <div class="row g-5">
+
+          <!-- Left Column: Command Center Details, Cards & Statutory Credentials -->
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="contact-details-panel">
+
+              <div class="services-eyebrow-container justify-content-start">
+                <span class="eyebrow-decor-line"></span>
+                <span class="services-eyebrow-label">GET IN TOUCH</span>
+              </div>
+
+              <h2 class="services-intro-heading text-start mb-3">
+                National Command <span class="text-gold-highlight">Headquarters</span>
+              </h2>
+
+              <p class="contact-details-intro mb-4">
+                Reach out to our leadership and dispatch officers directly. We coordinate security deployments and
+                emergency response operations around the clock.
+              </p>
+
+              <!-- Contact Information Cards -->
+              <div class="contact-info-cards-stack">
+
+                <!-- Address Card -->
+                <div class="contact-card-box">
+                  <div class="contact-box-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="contact-box-content">
+                    <span class="contact-box-title">Registered Headquarters</span>
+                    <p class="contact-box-desc">
+                      D No: 1-8-85/46 govt college, vidyanagar, Hyderabad 500044, Telangana, India.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="contact-card-box">
+                  <div class="contact-box-icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="contact-box-content">
+                    <span class="contact-box-title">24/7 Dispatch Hotlines</span>
+                    <p class="contact-box-desc mb-0">
+                      <a href="tel:8096947362" class="contact-phone-item">Primary: 8096947362</a><br>
+                      <a href="tel:+919100547892" class="contact-phone-item">Command: +91 91005 47892</a>
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Email Card -->
+                <div class="contact-card-box">
+                  <div class="contact-box-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="contact-box-content">
+                    <span class="contact-box-title">Official Electronic Mail</span>
+                    <p class="contact-box-desc mb-0">
+                      <a href="mailto:info@royalenansecurity.com"
+                        class="contact-email-item">info@royalenansecurity.com</a><br>
+                      <a href="mailto:hyderabad@royalenansecurity.com"
+                        class="contact-email-item">hyderabad@royalenansecurity.com</a>
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Operating Hours Card -->
+                <div class="contact-card-box">
+                  <div class="contact-box-icon">
+                    <i class="fa-solid fa-clock"></i>
+                  </div>
+                  <div class="contact-box-content">
+                    <span class="contact-box-title">Operating Dispatch Hours</span>
+                    <p class="contact-box-desc mb-0">
+                      <strong>24 Hours &bull; 7 Days a Week &bull; 365 Days</strong><br>
+                      <span class="text-gold-highlight">Active Patrol &amp; Control Room Escalation</span>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Statutory Credentials Badge Box -->
+              <div class="statutory-credentials-panel mt-4">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="cred-seal-icon"><i class="fa-solid fa-certificate text-gold"></i></div>
+                  <div>
+                    <strong class="text-white d-block">ISO 9001:2015 Registered &bull; MSME Certified</strong>
+                    <span class="text-muted small">100% Police-verified guard force and statutory compliance.</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Security Assessment & Free Quote Form -->
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="contact-form-card" id="contact-form-container">
+
+              <div class="form-header mb-4">
+                <span class="badge-gold">COMPLIMENTARY ASSESSMENT</span>
+                <h3 class="form-card-title text-white mt-2">
+                  Request a Free <span class="text-gold-highlight">Security Assessment</span>
+                </h3>
+                <p class="form-card-subtitle text-muted">
+                  Fill out your facility requirements below. Our security director will prepare a customized security
+                  proposal within 24 hours.
+                </p>
+              </div>
+
+              <!-- Form Element -->
+              <form id="security-quote-form" class="security-quote-form" novalidate>
+
+                <div class="row g-3">
+
+                  <!-- Full Name -->
+                  <div class="col-md-6">
+                    <label for="contact-name" class="form-label text-white-50">Full Name *</label>
+                    <div class="input-group-custom">
+                      <span class="input-icon"><i class="fa-solid fa-user"></i></span>
+                      <input type="text" class="form-control-custom" id="contact-name" name="name"
+                        placeholder="e.g. Rajesh Kumar" required>
+                    </div>
+                  </div>
+
+                  <!-- Organization / Company -->
+                  <div class="col-md-6">
+                    <label for="contact-org" class="form-label text-white-50">Company / Society Name *</label>
+                    <div class="input-group-custom">
+                      <span class="input-icon"><i class="fa-solid fa-building"></i></span>
+                      <input type="text" class="form-control-custom" id="contact-org" name="organization"
+                        placeholder="e.g. Prestige Tech Park" required>
+                    </div>
+                  </div>
+
+                  <!-- Phone Number -->
+                  <div class="col-md-6">
+                    <label for="contact-phone" class="form-label text-white-50">Phone Number *</label>
+                    <div class="input-group-custom">
+                      <span class="input-icon"><i class="fa-solid fa-phone"></i></span>
+                      <input type="tel" class="form-control-custom" id="contact-phone" name="phone"
+                        placeholder="e.g. 9876543210" required>
+                    </div>
+                  </div>
+
+                  <!-- Email Address -->
+                  <div class="col-md-6">
+                    <label for="contact-email" class="form-label text-white-50">Email Address *</label>
+                    <div class="input-group-custom">
+                      <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+                      <input type="email" class="form-control-custom" id="contact-email" name="email"
+                        placeholder="e.g. name@company.com" required>
+                    </div>
+                  </div>
+
+                  <!-- Service Required Dropdown -->
+                  <div class="col-md-6">
+                    <label for="contact-service" class="form-label text-white-50">Security Service *</label>
+                    <div class="input-group-custom">
+                      <span class="input-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                      <select class="form-control-custom form-select-custom" id="contact-service" name="service"
+                        required>
+                        <option value="" disabled selected>Select Primary Service</option>
+                        <option value="Industrial Security">Industrial Security Services</option>
+                        <option value="Corporate Security">Corporate Security &amp; Services</option>
+                        <option value="Mall & Retail Security">Mall and Retail Security</option>
+                        <option value="Hotel & Residential">Hotel and Residential Security</option>
+                        <option value="Hospital Security">Hospital Security &amp; Services</option>
+                        <option value="Building Protection">Building Protection &amp; Surveillance</option>
+                        <option value="Housekeeping Services">Professional Housekeeping Services</option>
+                        <option value="Full Facility Package">Complete Integrated Facility Package</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Facility Location -->
+                  <div class="col-md-6">
+                    <label for="contact-location" class="form-label text-white-50">Facility Location / City *</label>
+                    <div class="input-group-custom">
+                      <span class="input-icon"><i class="fa-solid fa-location-crosshairs"></i></span>
+                      <input type="text" class="form-control-custom" id="contact-location" name="location"
+                        placeholder="e.g. Hitec City, Hyderabad" required>
+                    </div>
+                  </div>
+
+                  <!-- Message / Specific Scope -->
+                  <div class="col-12">
+                    <label for="contact-message" class="form-label text-white-50">Scope &amp; Guards Required</label>
+                    <div class="input-group-custom">
+                      <textarea class="form-control-custom form-textarea-custom" id="contact-message" name="message"
+                        rows="4"
+                        placeholder="Briefly describe your property size, number of shifts, or specialized requirements..."></textarea>
+                    </div>
+                  </div>
+
+                  <!-- Submit Action Button -->
+                  <div class="col-12 mt-4">
+                    <button type="submit" class="btn-cta-gold-large w-100 justify-content-center" id="quote-submit-btn">
+                      <span>Submit Security Assessment Request</span>
+                      <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </button>
+                    <p class="form-privacy-note text-center text-white-50 small mt-2 mb-0">
+                      <i class="fa-solid fa-lock text-gold me-1"></i> Your details are strictly confidential and
+                      protected under our corporate privacy standards.
+                    </p>
+                  </div>
+
+                </div>
+
+                <!-- Form Success Feedback Alert -->
+                <div class="form-success-alert d-none mt-3 p-3 text-center" id="form-success-box">
+                  <i class="fa-solid fa-circle-check text-gold fs-3 mb-2"></i>
+                  <h4 class="text-white mb-1">Thank you for contacting Royal Enan Security!</h4>
+                  <p class="text-white-50 mb-0 small">Our command team has received your assessment request and will
+                    contact you within 15 minutes.</p>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. MAP & DEPLOYMENT COVERAGE SECTION
+         ========================================================================== -->
+    <section class="services-grid-section pt-0 pb-5" id="location-map">
+      <div class="container-custom">
+        <div class="map-card-container">
+          <div class="map-header p-4">
+            <div class="row align-items-center justify-content-between g-3">
+              <div class="col-md-7">
+                <span class="badge-gold">REGIONAL DEPLOYMENT HUB</span>
+                <h3 class="text-white mt-1 mb-0">Hyderabad &amp; Telangana Command Network</h3>
+              </div>
+              <div class="col-md-5 text-md-end">
+                <a href="https://maps.google.com/?q=Vidyanagar+Hyderabad" target="_blank" rel="noopener noreferrer"
+                  class="btn-outline-gold-pill btn-sm">
+                  <i class="fa-solid fa-diamond-turn-right me-1"></i> Get Driving Directions
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="map-iframe-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15228.324838634568!2d78.50868845!3d17.4078864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99bfad161571%3A0x6001dc110d79b9d3!2sVidyanagar%2C%20Hyderabad%2C%20Telangana%20500044!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Royal Enan Security Services Location Map"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. FAQ ACCORDION SECTION
+         ========================================================================== -->
+    <section class="services-intro-section pt-2 pb-5" id="faq">
+      <div class="container-custom">
+
+        <div class="section-title-wrap text-center mb-5" data-aos="fade-up">
+          <div class="services-eyebrow-container">
+            <span class="eyebrow-decor-line"></span>
+            <span class="services-eyebrow-label">QUESTIONS &amp; ANSWERS</span>
+            <span class="eyebrow-decor-line"></span>
+          </div>
+          <h2 class="services-intro-heading">
+            Frequently Asked <span class="text-gold-highlight">Questions</span>
+          </h2>
+          <p class="services-intro-desc">
+            Common questions regarding our security personnel deployment, compliance, and emergency escalation.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9" data-aos="fade-up">
+            <div class="accordion custom-faq-accordion" id="contactFaqAccordion">
+
+              <!-- FAQ 1 -->
+              <div class="accordion-item faq-item">
+                <h3 class="accordion-header" id="headingOne">
+                  <button class="accordion-button faq-btn" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    How rapidly can Royal Enan deploy security personnel to our facility?
+                  </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#contactFaqAccordion">
+                  <div class="accordion-body faq-answer">
+                    For emergency security escalations, our rapid mobilization squad can deploy within 15–30 minutes in
+                    the greater Hyderabad zone. For standard enterprise contracts, full customized guard rosters with
+                    site induction take between 12 to 24 hours.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 2 -->
+              <div class="accordion-item faq-item">
+                <h3 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button faq-btn collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Are all security personnel police-verified and background-checked?
+                  </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#contactFaqAccordion">
+                  <div class="accordion-body faq-answer">
+                    Yes, absolutely. 100% of our security personnel undergo comprehensive statutory background checks,
+                    local police verification, address validation, and strict physical and medical fitness examinations
+                    prior to on-site deployment.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 3 -->
+              <div class="accordion-item faq-item">
+                <h3 class="accordion-header" id="headingThree">
+                  <button class="accordion-button faq-btn collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Do you offer a complimentary on-site physical security audit?
+                  </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#contactFaqAccordion">
+                  <div class="accordion-body faq-answer">
+                    Yes. Our senior security directors conduct a thorough complimentary on-site audit of your
+                    perimeter, entry/exit choke points, CCTV surveillance blind spots, and visitor traffic patterns
+                    before submitting a transparent proposal.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 4 -->
+              <div class="accordion-item faq-item">
+                <h3 class="accordion-header" id="headingFour">
+                  <button class="accordion-button faq-btn collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    How do you supervise guards and maintain round-the-clock vigilance?
+                  </button>
+                </h3>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#contactFaqAccordion">
+                  <div class="accordion-body faq-answer">
+                    We maintain roving Mobile Field Officers who perform surprise day and night audits, biometric
+                    attendance checks, and digital QR patrol verification across every client post, backed by our 24/7
+                    central command control room.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       7. SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="row g-5 footer-grid-row">
+
+        <!-- Column 1: Company Info & Social Channels -->
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="footer-brand" aria-label="Royal Enan Security Home">
+            <img src="assets/images/logo.png" alt="Royal Enan Security Logo" class="footer-logo-img" width="52"
+              height="52">
+          </a>
+          <p class="footer-bio">
+            Royal Enan Security Services offers reliable security solutions for industries, corporate offices,
+            residential communities, and more.
+          </p>
+          <div class="footer-social-row" aria-label="Social media channels">
+            <a href="https://facebook.com" class="social-circle-btn" aria-label="Facebook" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://linkedin.com" class="social-circle-btn" aria-label="LinkedIn" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://instagram.com" class="social-circle-btn" aria-label="Instagram" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" class="social-circle-btn" aria-label="YouTube" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link"><span class="caret-gold">›</span> Home</a></li>
+            <li><a href="about.html" class="footer-link"><span class="caret-gold">›</span> About Us</a></li>
+            <li><a href="services.html" class="footer-link"><span class="caret-gold">›</span> Services</a></li>
+            <li><a href="clients.html" class="footer-link"><span class="caret-gold">›</span> Clients</a></li>
+            <li><a href="contact.html" class="footer-link active"><span class="caret-gold">›</span> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Our Services -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h3 class="footer-col-title">Our Services</h3>
+          <ul class="footer-links-list">
+            <li><a href="industrial-services.html" class="footer-link"><span class="caret-gold">›</span>
+                Industrial Security</a></li>
+            <li><a href="corporate-services.html" class="footer-link"><span class="caret-gold">›</span>
+                Corporate Security</a></li>
+            <li><a href="mall-retail-services.html" class="footer-link"><span class="caret-gold">›</span> Mall &amp;
+                Retail Security</a></li>
+            <li><a href="hotel-residential-services.html" class="footer-link"><span class="caret-gold">›</span> Hotel
+                &amp;
+                Residential Security</a></li>
+            <li><a href="hospital-services.html" class="footer-link"><span class="caret-gold">›</span> Hospital
+                Security</a></li>
+            <li><a href="building-protection-services.html" class="footer-link"><span class="caret-gold">›</span>
+                Building
+                Protection</a></li>
+            <li><a href="housekeeping-services.html" class="footer-link"><span class="caret-gold">›</span>
+                Housekeeping Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Us -->
+        <div class="col-lg-3 col-md-6" id="contact">
+          <h3 class="footer-col-title">Contact Us</h3>
+          <ul class="footer-contact-list">
+            <li class="contact-item">
+              <div class="contact-icon-gold"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-text">
+                <a href="tel:8096947362" class="contact-link">8096947362</a>
+                <a href="tel:+919100547892" class="contact-link">+91 91005 47892</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="contact-icon-gold"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-text">
+                <a href="mailto:info@royalenansecurity.com" class="contact-link">info@royalenansecurity.com</a>
+                <a href="mailto:hyderabad@royalenansecurity.com"
+                  class="contact-link">hyderabad@royalenansecurity.com</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="contact-icon-gold"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-text">
+                <span>D No: 1-8-85/46 govt college, vidyanagar, Hyderabad 500044</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Legal Bar with Divider -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">&copy; 2026 <b style="font-weight: 800; color: #ffffff;">Royal Enan Security
+            Services</b>.All Rights Reserved. designed & developed by <a href="https://sunseaz.com" target="_blank"><b
+              style="font-weight: 800; color: #ffffff;">SunSeaz</b></a></p>
+        <button type="button" class="back-to-top-circle" id="back-to-top-btn" aria-label="Back to Top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts: Bootstrap 5.3.3 Bundle, AOS, Main JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Interactive Form Handling Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const quoteForm = document.getElementById('security-quote-form');
+      const successBox = document.getElementById('form-success-box');
+      const submitBtn = document.getElementById('quote-submit-btn');
+
+      if (quoteForm) {
+        quoteForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          if (!quoteForm.checkValidity()) {
+            quoteForm.classList.add('was-validated');
+            return;
+          }
+
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin me-2"></i> Submitting Request...';
+
+          setTimeout(() => {
+            submitBtn.style.display = 'none';
+            if (successBox) {
+              successBox.classList.remove('d-none');
+              successBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+            quoteForm.reset();
+            quoteForm.classList.remove('was-validated');
+          }, 1000);
+        });
+      }
+    });
+  </script>
+
+</body>
+
+</html>
