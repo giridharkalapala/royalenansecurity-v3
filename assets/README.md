@@ -3,7 +3,7 @@
 This document records the asset mapping for the pixel-accurate recreation of the Royal Enan Security Services homepage based on the reference design (`full-page-reference.png`).
 
 ## 1. Brand Assets
-- `logo.png` — Official Royal Enan Security Services gold shield emblem with crown and laurel wreath.
+- `RESS-logo.png` — Official Royal Enan Security Services gold shield emblem with crown and laurel wreath.
 
 ## 2. Hero Section
 - `hero-building.jpg` — Cinematic nighttime photograph of a modern illuminated corporate glass building.

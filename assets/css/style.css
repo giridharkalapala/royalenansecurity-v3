@@ -57,8 +57,8 @@
 }
 
 .cred-brand-emblem {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.8));
   transition: transform var(--transition-smooth, 0.35s ease);
@@ -211,8 +211,8 @@
 }
 
 .cred-drawer-logo {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
 }
 
@@ -340,8 +340,8 @@
     transform: translateX(25px);
     pointer-events: none;
     transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-                transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-                visibility 0.3s ease;
+      transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+      visibility 0.3s ease;
   }
 
   /* Reveal on hover over Services nav item, hover of panel itself, or active class */
@@ -362,6 +362,7 @@
     margin-top: 0.5rem;
     padding: 1.25rem;
   }
+
   .cred-drawer-services-panel.is-open {
     display: block;
     animation: drawerSubFadeIn 0.3s ease;
@@ -373,6 +374,7 @@
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -565,8 +567,8 @@
 }
 
 .footer-logo-img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
 }
 
@@ -3226,7 +3228,7 @@ body.about-page {
 .about-hero-section {
   position: relative;
   min-height: 480px;
-  padding-top: 130px;
+  padding-top: 180px;
   padding-bottom: 70px;
   display: flex;
   align-items: center;
@@ -4017,8 +4019,8 @@ body.about-page {
    -------------------------------------------------------------------------- */
 .services-hero-section {
   position: relative;
-  min-height: 380px;
-  padding-top: 110px;
+  min-height: 500px;
+  padding-top: 130px;
   padding-bottom: 45px;
   display: flex;
   align-items: center;
@@ -5400,8 +5402,8 @@ body.about-page {
   text-decoration: none;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28), 0 2px 6px rgba(0, 0, 0, 0.16);
   transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1),
-              box-shadow 0.28s ease,
-              filter 0.2s ease;
+    box-shadow 0.28s ease,
+    filter 0.2s ease;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -5483,10 +5485,12 @@ body.about-page {
     transform: scale(1);
     opacity: 0.85;
   }
+
   70% {
     transform: scale(1.48);
     opacity: 0;
   }
+
   100% {
     transform: scale(1.48);
     opacity: 0;
@@ -5498,10 +5502,12 @@ body.about-page {
     transform: scale(1);
     opacity: 0.85;
   }
+
   70% {
     transform: scale(1.48);
     opacity: 0;
   }
+
   100% {
     transform: scale(1.48);
     opacity: 0;
@@ -5584,5 +5590,3 @@ body.about-page {
     display: none;
   }
 }
-
-
