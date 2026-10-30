@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Operations Gallery | Royal Enan Security Services</title>
+  <meta name="description"
+    content="Explore the high-resolution photo gallery of Royal Enan Security Services. Witness our disciplined guard force, perimeter patrols, corporate access sentinels, and emergency drills in action.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/RESS-logo.png">
+
+  <!-- Google Fonts: Rajdhani, Poppins, Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Rajdhani:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6.5.2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- AOS (Animate on Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="gallery-page">
+
+  <!-- ==========================================================================
+       1. Header: Fixed Brand Logo & Sticky Hamburger Navigation Menu
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container-custom">
+
+      <!-- Brand Logo Emblem -->
+      <a href="index.html" class="cred-header-brand" aria-label="Royal Enan Security Services Homepage">
+        <img src="assets/images/RESS-logo.png" alt="Royal Enan Security Emblem" class="cred-brand-emblem" width="80"
+          height="80">
+      </a>
+
+      <!-- Header Actions & Elevated Hamburger Box -->
+      <div class="cred-header-actions">
+        <button type="button" class="cred-hamburger-box" id="menu-toggle-btn" aria-label="Toggle navigation menu"
+          aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="hamburger-label d-none d-sm-inline">MENU</span>
+          <span class="cred-hamburger-bars" aria-hidden="true">
+            <span class="c-bar"></span>
+            <span class="c-bar"></span>
+            <span class="c-bar"></span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Fullscreen Navigation Drawer -->
+  <div class="cred-drawer-overlay" id="mobile-nav-drawer" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-label="Navigation Menu">
+    <div class="cred-drawer-container">
+
+      <!-- Drawer Top Bar -->
+      <div class="cred-drawer-top">
+        <a href="index.html" class="cred-drawer-brand" aria-label="Royal Enan Security Home">
+          <img src="assets/images/RESS-logo.png" alt="Royal Enan Emblem" class="cred-drawer-logo" width="80"
+            height="80">
+        </a>
+        <button type="button" class="cred-drawer-close" id="drawer-close-btn" aria-label="Close navigation menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Navigation Links -->
+      <div class="cred-drawer-grid">
+        <div class="cred-drawer-nav-col">
+          <ul class="cred-drawer-nav-list">
+            <li><a href="index.html" class="cred-nav-item drawer-link"><span class="nav-lbl">Home</span></a></li>
+            <li><a href="about.html" class="cred-nav-item drawer-link"><span class="nav-lbl">About Us</span></a></li>
+            <li class="cred-drawer-services-item" id="drawer-services-item">
+              <a href="services.html" class="cred-nav-item drawer-link" id="drawer-services-link">
+                <span class="nav-lbl">Services</span>
+                <i class="fa-solid fa-chevron-right drawer-nav-arrow" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li><a href="clients.html" class="cred-nav-item drawer-link"><span class="nav-lbl">Clients</span></a></li>
+            <li><a href="gallery.html" class="cred-nav-item drawer-link active"><span class="nav-lbl">Gallery</span></a></li>
+            <li><a href="contact.html" class="cred-nav-item drawer-link"><span class="nav-lbl">Contact Us</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Right Side: All Services Flyout Panel -->
+        <div class="cred-drawer-services-panel" id="drawer-services-panel" aria-label="Our Specialized Services">
+          <ul class="drawer-services-subgrid">
+            <li>
+              <a href="industrial-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-industry"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Industrial Services</span>
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="corporate-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-building"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Corporate Services</span>
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mall-retail-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Mall &amp; Retail Services</span>
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="hotel-residential-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-hotel"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Hotel &amp; Residential</span>
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="hospital-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-square-plus"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Hospital Services</span>
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="building-protection-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Building Protection</span>
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="housekeeping-services.html" class="drawer-sub-card drawer-link">
+                <div class="sub-card-icon"><i class="fa-solid fa-broom"></i></div>
+                <div class="sub-card-body">
+                  <span class="sub-card-title">Housekeeping Services</span>
+                </div>
+                <i class="fa-solid fa-arrow-right sub-card-arrow"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         2. HERO SECTION: Full-Width Gallery Header
+         ========================================================================== -->
+    <section class="services-hero-section gallery-hero-section" id="gallery-hero">
+
+      <!-- Background Image Layer with Dusk Corporate Lighting -->
+      <div class="services-hero-bg-container" aria-hidden="true">
+        <img src="assets/images/hero-building.jpg" alt="Royal Enan Security Headquarters Operations"
+          class="services-hero-bg-img">
+        <div class="services-hero-overlay"></div>
+      </div>
+
+      <div class="container-custom services-hero-content">
+        <div class="row align-items-center">
+
+          <!-- Left Column: Breadcrumb, Heading, Cyan Tagline & Description -->
+          <div class="col-lg-7 col-md-12 services-hero-left" data-aos="fade-right" data-aos-duration="800">
+
+            <!-- Breadcrumb Navigation -->
+            <nav class="services-breadcrumb" aria-label="Breadcrumb">
+              <a href="index.html" class="breadcrumb-home-link">
+                <i class="fa-solid fa-house"></i> Home
+              </a>
+              <span class="breadcrumb-sep">/</span>
+              <span class="breadcrumb-current">Photo Gallery</span>
+            </nav>
+
+            <!-- Main Heading with Gold Word Highlight -->
+            <h1 class="services-hero-title">
+              Operational Excellence<br>
+              <span class="text-gold-highlight">Photo Gallery</span>
+            </h1>
+
+            <!-- Supporting Tagline in Italic Cyan -->
+            <p class="services-hero-tagline">
+              <em>Visual proof of our discipline, alertness &amp; 24/7 active guard presence</em>
+            </p>
+
+            <!-- Supporting Description Paragraph -->
+            <p class="services-hero-desc">
+              Explore firsthand captures of Royal Enan's police-verified guard force in action — from corporate entry sentinels and industrial perimeter patrols to rigorous parade inspections and emergency training drills.
+            </p>
+          </div>
+
+          <!-- Right Column: 3 Compact Trust Indicators -->
+          <div class="col-lg-5 col-md-12 services-hero-right" data-aos="fade-left" data-aos-duration="850">
+            <div class="services-trust-panel">
+
+              <!-- Trust Item 1 -->
+              <div class="services-trust-item">
+                <div class="services-trust-badge">
+                  <i class="fa-solid fa-camera"></i>
+                </div>
+                <div class="services-trust-text">
+                  <span class="trust-title">12+ Field Captures</span>
+                  <span class="trust-subtitle">Real Deployment Records</span>
+                </div>
+              </div>
+
+              <!-- Trust Item 2 -->
+              <div class="services-trust-item">
+                <div class="services-trust-badge">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="services-trust-text">
+                  <span class="trust-title">500+ Active Guards</span>
+                  <span class="trust-subtitle">Police-Verified Personnel</span>
+                </div>
+              </div>
+
+              <!-- Trust Item 3 -->
+              <div class="services-trust-item">
+                <div class="services-trust-badge">
+                  <span class="badge-247-icon">ISO</span>
+                </div>
+                <div class="services-trust-text">
+                  <span class="trust-title">ISO 9001:2015</span>
+                  <span class="trust-subtitle">Quality Certified Protocols</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. IMPACT METRIC BAR: Full-Width Gold Stat Strip
+         ========================================================================== -->
+    <section class="emergency-contact-bar clients-metric-bar" aria-label="Key Partnership Statistics">
+      <div class="container-custom">
+        <div class="clients-stats-grid">
+
+          <div class="client-stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Police Verified Guards</span>
+          </div>
+
+          <div class="client-stat-divider d-none d-md-block"></div>
+
+          <div class="client-stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Active Guard Coverage</span>
+          </div>
+
+          <div class="client-stat-divider d-none d-md-block"></div>
+
+          <div class="client-stat-item">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">Commercial Sites</span>
+          </div>
+
+          <div class="client-stat-divider d-none d-md-block"></div>
+
+          <div class="client-stat-item">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Years of Industry Trust</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. MAIN GALLERY SHOWCASE: Filterable Masonry Grid with Pop-up Lightbox
+         ========================================================================== -->
+    <section class="gallery-section" id="gallery-showcase">
+      <div class="container-custom">
+
+        <!-- Section Title & Subtitle -->
+        <div class="section-title-wrap text-center mb-4" data-aos="fade-up">
+          <div class="services-eyebrow-container">
+            <span class="eyebrow-decor-line"></span>
+            <span class="services-eyebrow-label">FIELD OPERATIONS &amp; FOOTAGE</span>
+            <span class="eyebrow-decor-line"></span>
+          </div>
+          <h2 class="services-intro-heading">
+            Trained Security Personnel <span class="text-gold-highlight">In Action</span>
+          </h2>
+          <p class="services-intro-desc">
+            Click on any photograph to open the interactive high-resolution viewer, inspect guard squad details, and explore deployment standards.
+          </p>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="gallery-filter-wrap" data-aos="fade-up" data-aos-delay="100">
+          <div class="gallery-filter-row">
+            <button type="button" class="gallery-filter-btn is-active" data-filter="all">
+              <i class="fa-solid fa-border-all"></i> All Operations
+              <span class="gallery-filter-count">12</span>
+            </button>
+            <button type="button" class="gallery-filter-btn" data-filter="operations">
+              <i class="fa-solid fa-shield-halved"></i> Guard Force
+              <span class="gallery-filter-count">4</span>
+            </button>
+            <button type="button" class="gallery-filter-btn" data-filter="patrols">
+              <i class="fa-solid fa-person-walking"></i> Facility Patrols
+              <span class="gallery-filter-count">3</span>
+            </button>
+            <button type="button" class="gallery-filter-btn" data-filter="corporate">
+              <i class="fa-solid fa-building"></i> Corporate &amp; Access
+              <span class="gallery-filter-count">3</span>
+            </button>
+            <button type="button" class="gallery-filter-btn" data-filter="training">
+              <i class="fa-solid fa-award"></i> Drills &amp; Training
+              <span class="gallery-filter-count">2</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 12-Item Uniform Grid (Exact Same Size, No Text on Images) -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 gallery-uniform-grid" id="gallery-grid">
+
+          <!-- Photo 1 -->
+          <div class="col gallery-item" data-category="operations" data-aos="fade-up" data-aos-delay="50">
+            <div class="gallery-card" data-src="assets/images/gallery/1.jpeg" title="Click to view photo">
+              <div class="gallery-img-wrap">
+                <img src="assets/images/gallery/1.jpeg" alt="Royal Enan Security Operations Photo 1" class="gallery-img" loading="lazy">
+                <div class="gallery-zoom-overlay">
+                  <div class="gallery-zoom-btn" aria-hidden="true">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 2 -->
+          <div class="col gallery-item" data-category="corporate" data-aos="fade-up" data-aos-delay="100">
+            <div class="gallery-card" data-src="assets/images/gallery/2.jpeg" title="Click to view photo">
+              <div class="gallery-img-wrap">
+                <img src="assets/images/gallery/2.jpeg" alt="Royal Enan Security Operations Photo 2" class="gallery-img" loading="lazy">
+                <div class="gallery-zoom-overlay">
+                  <div class="gallery-zoom-btn" aria-hidden="true">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 3 -->
+          <div class="col gallery-item" data-category="operations" data-aos="fade-up" data-aos-delay="150">
+            <div class="gallery-card" data-src="assets/images/gallery/3.jpeg" title="Click to view photo">
+              <div class="gallery-img-wrap">
+                <img src="assets/images/gallery/3.jpeg" alt="Royal Enan Security Operations Photo 3" class="gallery-img" loading="lazy">
+                <div class="gallery-zoom-overlay">
+                  <div class="gallery-zoom-btn" aria-hidden="true">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 4 -->
+          <div class="col gallery-item" data-category="training" data-aos="fade-up" data-aos-delay="200">
+            <div class="gallery-card" data-src="assets/images/gallery/4.jpeg" title="Click to view photo">
+              <div class="gallery-img-wrap">
+                <img src="assets/images/gallery/4.jpeg" alt="Royal Enan Security Operations Photo 4" class="gallery-img" loading="lazy">
+                <div class="gallery-zoom-overlay">
+                  <div class="gallery-zoom-btn" aria-hidden="true">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 5 -->
+          <div class="col gallery-item" data-category="patrols" data-aos="fade-up" data-aos-delay="250">
+            <div class="gallery-card" data-src="assets/images/gallery/5.jpeg" title="Click to view photo">
+              <div class="gallery-img-wrap">
+                <img src="assets/images/gallery/5.jpeg" alt="Royal Enan Security Operations Photo 5" class="gallery-img" loading="lazy">
+                <div class="gallery-zoom-overlay">
+                  <div class="gallery-zoom-btn" aria-hidden="true">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 6 -->
+          <div class="col gallery-item" data-category="training" data-aos="fade-up" data-aos-delay="300">
+            <div class="gallery-card" data-src="assets/images/gallery/6.jpeg" title="Click to view photo">
+              <div class="gallery-img-wrap">
+                <img src="assets/images/gallery/6.jpeg" alt="Royal Enan Security Operations Photo 6" class="gallery-img" loading="lazy">
+                <div class="gallery-zoom-overlay">
+                  <div class="gallery-zoom-btn" aria-hidden="true">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 7 -->
+          <div class="col gallery-item" data-category="corporate" data-aos="fade-up" data-aos-delay="350">
+            <div class="gallery-card" data-src="assets/images/gallery/7.jpeg" title="Click to view photo">
+              <div class="gallery-img-wrap">
+                <img src="assets/images/gallery/7.jpeg" alt="Royal Enan Security Operations Photo 7" class="gallery-img" loading="lazy">
+                <div class="gallery-zoom-overlay">
+                  <div class="gallery-zoom-btn" aria-hidden="true">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 8 -->
+          <div class="col gallery-item" data-category="operations" data-aos="fade-up" data-aos-delay="400">
+            <div class="gallery-card" data-src="assets/images/gallery/8.jpeg" title="Click to view photo">
+              <div class="gallery-img-wrap">
+                <img src="assets/images/gallery/8.jpeg" alt="Royal Enan Security Operations Photo 8" class="gallery-img" loading="lazy">
+                <div class="gallery-zoom-overlay">
+                  <div class="gallery-zoom-btn" aria-hidden="true">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 9 -->
+          <div class="col gallery-item" data-category="patrols" data-aos="fade-up" data-aos-delay="450">
+            <div class="gallery-card" data-src="assets/images/gallery/9.jpeg" title="Click to view photo">
+              <div class="gallery-img-wrap">
+                <img src="assets/images/gallery/9.jpeg" alt="Royal Enan Security Operations Photo 9" class="gallery-img" loading="lazy">
+                <div class="gallery-zoom-overlay">
+                  <div class="gallery-zoom-btn" aria-hidden="true">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 10 -->
+          <div class="col gallery-item" data-category="operations" data-aos="fade-up" data-aos-delay="500">
+            <div class="gallery-card" data-src="assets/images/gallery/10.jpeg" title="Click to view photo">
+              <div class="gallery-img-wrap">
+                <img src="assets/images/gallery/10.jpeg" alt="Royal Enan Security Operations Photo 10" class="gallery-img" loading="lazy">
+                <div class="gallery-zoom-overlay">
+                  <div class="gallery-zoom-btn" aria-hidden="true">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 11 -->
+          <div class="col gallery-item" data-category="corporate" data-aos="fade-up" data-aos-delay="550">
+            <div class="gallery-card" data-src="assets/images/gallery/11.jpeg" title="Click to view photo">
+              <div class="gallery-img-wrap">
+                <img src="assets/images/gallery/11.jpeg" alt="Royal Enan Security Operations Photo 11" class="gallery-img" loading="lazy">
+                <div class="gallery-zoom-overlay">
+                  <div class="gallery-zoom-btn" aria-hidden="true">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 12 -->
+          <div class="col gallery-item" data-category="patrols" data-aos="fade-up" data-aos-delay="600">
+            <div class="gallery-card" data-src="assets/images/gallery/12.jpeg" title="Click to view photo">
+              <div class="gallery-img-wrap">
+                <img src="assets/images/gallery/12.jpeg" alt="Royal Enan Security Operations Photo 12" class="gallery-img" loading="lazy">
+                <div class="gallery-zoom-overlay">
+                  <div class="gallery-zoom-btn" aria-hidden="true">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       6. INTERACTIVE FULLSCREEN LIGHTBOX POP-UP MODAL
+       ========================================================================== -->
+  <div class="gallery-lightbox-modal" id="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Image Lightbox Viewer">
+
+    <!-- Top Bar: Counter & Close Button -->
+    <div class="lightbox-top-bar">
+      <span class="lightbox-counter-badge">
+        <i class="fa-solid fa-camera text-gold me-2"></i>
+        Photo <b id="lb-current" class="ms-1">1</b> / <b id="lb-total" class="ms-1">12</b>
+      </span>
+
+      <button type="button" class="lightbox-close-btn" id="lb-close-btn" aria-label="Close Lightbox (Esc)">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Middle Stage: Previous Button, Large Display Image, Next Button -->
+    <div class="lightbox-stage" id="lb-stage">
+      <button type="button" class="lightbox-nav-btn lightbox-prev-btn" id="lb-prev-btn" aria-label="Previous Photo (Left Arrow)">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <div class="lightbox-img-frame" id="lb-img-frame">
+        <img src="assets/images/gallery/1.jpeg" alt="Selected Gallery Photo" class="lightbox-display-img" id="lb-img">
+      </div>
+
+      <button type="button" class="lightbox-nav-btn lightbox-next-btn" id="lb-next-btn" aria-label="Next Photo (Right Arrow)">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- ==========================================================================
+       7. Footer: 4-Column Corporate Navy Footer with Legal & Social
+       ========================================================================== -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container-custom">
+      <div class="row g-4 footer-top-row">
+
+        <!-- Column 1: Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="footer-brand" aria-label="Royal Enan Security Home">
+            <img src="assets/images/RESS-logo.png" alt="Royal Enan Security Services" class="footer-logo" width="80"
+              height="80">
+          </a>
+          <p class="footer-brand-desc">
+            Royal Enan Security Services offers reliable security solutions for industries, corporate offices,
+            residential communities, and more.
+          </p>
+          <div class="footer-social-row" aria-label="Social media channels">
+            <a href="https://facebook.com" class="social-circle-btn" aria-label="Facebook" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://linkedin.com" class="social-circle-btn" aria-label="LinkedIn" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://instagram.com" class="social-circle-btn" aria-label="Instagram" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" class="social-circle-btn" aria-label="YouTube" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link"><span class="caret-gold">›</span> Home</a></li>
+            <li><a href="about.html" class="footer-link"><span class="caret-gold">›</span> About Us</a></li>
+            <li><a href="services.html" class="footer-link"><span class="caret-gold">›</span> Services</a></li>
+            <li><a href="clients.html" class="footer-link"><span class="caret-gold">›</span> Clients</a></li>
+            <li><a href="gallery.html" class="footer-link active"><span class="caret-gold">›</span> Gallery</a></li>
+            <li><a href="contact.html" class="footer-link"><span class="caret-gold">›</span> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Our Services -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h3 class="footer-col-title">Our Services</h3>
+          <ul class="footer-links-list">
+            <li><a href="industrial-services.html" class="footer-link"><span class="caret-gold">›</span> Industrial Security</a></li>
+            <li><a href="corporate-services.html" class="footer-link"><span class="caret-gold">›</span> Corporate Security</a></li>
+            <li><a href="mall-retail-services.html" class="footer-link"><span class="caret-gold">›</span> Mall &amp; Retail Security</a></li>
+            <li><a href="hotel-residential-services.html" class="footer-link"><span class="caret-gold">›</span> Hotel &amp; Residential</a></li>
+            <li><a href="hospital-services.html" class="footer-link"><span class="caret-gold">›</span> Hospital Security</a></li>
+            <li><a href="building-protection-services.html" class="footer-link"><span class="caret-gold">›</span> Building Protection</a></li>
+            <li><a href="housekeeping-services.html" class="footer-link"><span class="caret-gold">›</span> Housekeeping Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Us -->
+        <div class="col-lg-3 col-md-6" id="contact">
+          <h3 class="footer-col-title">Contact Us</h3>
+          <ul class="footer-contact-list">
+            <li class="contact-item">
+              <div class="contact-icon-gold"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-text">
+                <a href="tel:8096947362" class="contact-link">+91 8096947362</a>
+                <a href="tel:04045599506" class="contact-link">04045599506</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="contact-icon-gold"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-text">
+                <a href="mailto:info@royalenansecurity.com" class="contact-link">info@royalenansecurity.com</a>
+                <a href="mailto:hyderabad@royalenansecurity.com" class="contact-link">hyderabad@royalenansecurity.com</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="contact-icon-gold"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-text">
+                <span>D No: 1-8-85/46 govt college, vidyanagar, Hyderabad 500044</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Legal Bar with Divider -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">&copy; 2026 <b style="font-weight: 800; color: #ffffff;">Royal Enan Security services pvt ltd</b>. All Rights Reserved. designed &amp; developed by <a href="https://sunseaz.com" target="_blank"><b style="font-weight: 800; color: #ffffff;">SunSeaz</b></a></p>
+        <button type="button" class="back-to-top-circle" id="back-to-top-btn" aria-label="Back to Top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Contact Buttons (WhatsApp & Call) -->
+  <div class="floating-contact-wrap" id="floating-contact-wrap" role="region" aria-label="Quick Contact Shortcuts">
+    <a href="tel:+919676103951" class="floating-btn floating-btn-call" id="floating-call-btn"
+      aria-label="Direct Call: +91 96761 03951">
+      <span class="floating-btn-pulse"></span>
+      <i class="fa-solid fa-phone"></i>
+      <span class="floating-btn-tooltip">Call: 96761 03951</span>
+    </a>
+    <a href="https://wa.me/919676103951?text=Hello%20Royal%20Enan%20Security%20Services%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+      target="_blank" rel="noopener noreferrer" class="floating-btn floating-btn-whatsapp" id="floating-whatsapp-btn"
+      aria-label="Chat on WhatsApp: +91 96761 03951">
+      <span class="floating-btn-pulse"></span>
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="floating-btn-tooltip">Chat on WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- Scripts: Bootstrap 5.3.3 Bundle, AOS, Main JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Interactive Gallery Lightbox & Filter Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Category Filtering
+      const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+
+          const filter = btn.getAttribute('data-filter');
+
+          galleryItems.forEach(item => {
+            const category = item.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+              item.style.display = '';
+              setTimeout(() => {
+                item.style.opacity = '1';
+                item.style.transform = 'translateY(0) scale(1)';
+              }, 40);
+            } else {
+              item.style.opacity = '0';
+              item.style.transform = 'translateY(15px) scale(0.96)';
+              setTimeout(() => {
+                item.style.display = 'none';
+              }, 250);
+            }
+          });
+        });
+      });
+
+      // 2. Interactive Lightbox Controller
+      const lightbox = document.getElementById('gallery-lightbox');
+      const lbImg = document.getElementById('lb-img');
+      const lbCurrent = document.getElementById('lb-current');
+      const lbTotal = document.getElementById('lb-total');
+      const closeBtn = document.getElementById('lb-close-btn');
+      const prevBtn = document.getElementById('lb-prev-btn');
+      const nextBtn = document.getElementById('lb-next-btn');
+      const cards = Array.from(document.querySelectorAll('.gallery-card'));
+
+      const getActiveData = () => {
+        const visibleCards = cards.filter(card => {
+          const item = card.closest('.gallery-item');
+          return !item || item.style.display !== 'none';
+        });
+        const targetList = visibleCards.length > 0 ? visibleCards : cards;
+        return targetList.map(card => ({
+          src: card.getAttribute('data-src'),
+          cardElement: card
+        }));
+      };
+
+      let activeGallery = getActiveData();
+      let currentIndex = 0;
+
+      const updateLightbox = (index) => {
+        activeGallery = getActiveData();
+        lbTotal.textContent = activeGallery.length;
+
+        currentIndex = (index + activeGallery.length) % activeGallery.length;
+        const data = activeGallery[currentIndex];
+
+        // Animate image switch
+        lbImg.style.opacity = '0';
+        lbImg.style.transform = 'scale(0.95)';
+
+        setTimeout(() => {
+          lbImg.src = data.src;
+          lbCurrent.textContent = currentIndex + 1;
+
+          lbImg.onload = () => {
+            lbImg.style.opacity = '1';
+            lbImg.style.transform = 'scale(1)';
+          };
+          if (lbImg.complete) {
+            lbImg.style.opacity = '1';
+            lbImg.style.transform = 'scale(1)';
+          }
+        }, 110);
+
+        // Preload next & previous images
+        if (activeGallery.length > 1) {
+          const nextIdx = (currentIndex + 1) % activeGallery.length;
+          const prevIdx = (currentIndex - 1 + activeGallery.length) % activeGallery.length;
+          new Image().src = activeGallery[nextIdx].src;
+          new Image().src = activeGallery[prevIdx].src;
+        }
+      };
+
+      const openLightboxForCard = (card) => {
+        activeGallery = getActiveData();
+        const foundIndex = activeGallery.findIndex(item => item.cardElement === card);
+        updateLightbox(foundIndex !== -1 ? foundIndex : 0);
+        lightbox.classList.add('is-active');
+        document.body.style.overflow = 'hidden';
+      };
+
+      const closeLightbox = () => {
+        lightbox.classList.remove('is-active');
+        document.body.style.overflow = '';
+      };
+
+      // Click on cards
+      cards.forEach(card => {
+        card.addEventListener('click', () => {
+          openLightboxForCard(card);
+        });
+      });
+
+      // Controls
+      closeBtn.addEventListener('click', closeLightbox);
+      prevBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        updateLightbox(currentIndex - 1);
+      });
+      nextBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        updateLightbox(currentIndex + 1);
+      });
+
+      // Click outside image closes lightbox
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox || e.target.id === 'lb-stage' || e.target.id === 'lb-img-frame') {
+          closeLightbox();
+        }
+      });
+
+      // Keyboard navigation
+      document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('is-active')) return;
+
+        if (e.key === 'Escape') {
+          closeLightbox();
+        } else if (e.key === 'ArrowLeft') {
+          updateLightbox(currentIndex - 1);
+        } else if (e.key === 'ArrowRight') {
+          updateLightbox(currentIndex + 1);
+        }
+      });
+
+      // Mobile Touch Swipe Navigation
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      lightbox.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      lightbox.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+      }, { passive: true });
+
+      const handleSwipe = () => {
+        const threshold = 45;
+        if (touchEndX + threshold < touchStartX) {
+          // Swipe left -> next
+          updateLightbox(currentIndex + 1);
+        } else if (touchEndX > touchStartX + threshold) {
+          // Swipe right -> prev
+          updateLightbox(currentIndex - 1);
+        }
+      };
+    });
+  </script>
+
+</body>
+
+</html>
