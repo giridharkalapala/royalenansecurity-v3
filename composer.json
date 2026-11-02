@@ -1,0 +1,16 @@
+{
+    "name": "royalenan/security-services",
+    "description": "Royal Enan Security Services Web Application",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "phpmailer/phpmailer": "^6.12",
+        "vlucas/phpdotenv": "^5.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
+

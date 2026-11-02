@@ -422,7 +422,11 @@
               </div>
 
               <!-- Form Element -->
-              <form id="security-quote-form" class="security-quote-form" novalidate>
+              <form id="security-quote-form" class="security-quote-form" action="send-enquiry.php" method="POST" novalidate>
+                <!-- Anti-spam Honeypot (Hidden) -->
+                <div style="display:none !important;" aria-hidden="true">
+                  <input type="text" name="website_hp" tabindex="-1" autocomplete="off">
+                </div>
 
                 <div class="row g-3">
 
@@ -526,6 +530,13 @@
                   <h4 class="text-white mb-1">Thank you for contacting Royal Enan Security!</h4>
                   <p class="text-white-50 mb-0 small">Our command team has received your assessment request and will
                     contact you within 15 minutes.</p>
+                </div>
+
+                <!-- Form Error Feedback Alert -->
+                <div class="form-error-alert d-none mt-3 p-3 text-center" id="form-error-box" style="background: rgba(40, 16, 20, 0.9); border: 1.5px solid #e63946; border-radius: 8px;">
+                  <i class="fa-solid fa-triangle-exclamation text-danger fs-3 mb-2"></i>
+                  <h4 class="text-white mb-1">Request Submission Issue</h4>
+                  <p class="text-white-50 mb-0 small" id="form-error-message">Unable to submit your request at this moment. Please try again or contact us directly.</p>
                 </div>
 
               </form>
@@ -812,11 +823,18 @@
     document.addEventListener('DOMContentLoaded', () => {
       const quoteForm = document.getElementById('security-quote-form');
       const successBox = document.getElementById('form-success-box');
+      const errorBox = document.getElementById('form-error-box');
+      const errorMessage = document.getElementById('form-error-message');
       const submitBtn = document.getElementById('quote-submit-btn');
+      const originalBtnContent = submitBtn ? submitBtn.innerHTML : '';
 
       if (quoteForm) {
-        quoteForm.addEventListener('submit', (e) => {
+        quoteForm.addEventListener('submit', async (e) => {
           e.preventDefault();
+
+          if (errorBox) {
+            errorBox.classList.add('d-none');
+          }
 
           if (!quoteForm.checkValidity()) {
             quoteForm.classList.add('was-validated');
@@ -826,15 +844,44 @@
           submitBtn.disabled = true;
           submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin me-2"></i> Submitting Request...';
 
-          setTimeout(() => {
-            submitBtn.style.display = 'none';
-            if (successBox) {
-              successBox.classList.remove('d-none');
-              successBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          try {
+            const formData = new FormData(quoteForm);
+            const response = await fetch('send-enquiry.php', {
+              method: 'POST',
+              headers: {
+                'X-Requested-With': 'XMLHttpRequest',
+                'Accept': 'application/json'
+              },
+              body: formData
+            });
+
+            const result = await response.json();
+
+            if (response.ok && result.success) {
+              submitBtn.style.display = 'none';
+              if (successBox) {
+                successBox.classList.remove('d-none');
+                successBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+              }
+              quoteForm.reset();
+              quoteForm.classList.remove('was-validated');
+            } else {
+              throw new Error(result.message || 'Unable to submit your security assessment request.');
             }
-            quoteForm.reset();
-            quoteForm.classList.remove('was-validated');
-          }, 1000);
+          } catch (err) {
+            console.error('Contact Form Submission Error:', err);
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnContent;
+            if (errorBox) {
+              if (errorMessage) {
+                errorMessage.textContent = err.message || 'An error occurred while submitting your enquiry. Please try again.';
+              }
+              errorBox.classList.remove('d-none');
+              errorBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+              alert(err.message || 'An error occurred. Please try again.');
+            }
+          }
         });
       }
     });
